@@ -15,9 +15,14 @@ subprocess.run(["python3", "/root/ise-landscape/dacl-api/finalized-dacl-post.py"
 
 subprocess.run(["python3", "/root/ise-landscape/dacl-api/finalized-dacl-put.py"])
 
+subprocess.run(["python3", "/root/ise-landscape/authz/post_authz.py"])
+
+subprocess.run(["python3", "/root/ise-landscape/parent/cleanup.py"])
 
 
 print("hello")
+
+
 
 
 

@@ -59,8 +59,13 @@ result =(response2.text)
 #print(result)
 
 json_response2 = response2.json()
-print(json.dumps(json_response2))
+#print(json.dumps(json_response2))
 
 
 
 
+post_url ='https://ise-proxy2.taimoorlab.local/ers/config/authorizationprofile'
+
+
+response_post = requests.request("POST", post_url, headers=headers, data=result, verify=False)
+#print(response_post)

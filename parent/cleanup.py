@@ -8,7 +8,7 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 
 
-connection = mysql.connector.connect(host='odbc.taimoorlab.local',
+connection = mysql.connector.connect(host='127.0.0.1',
                                      database='landscape',
                                      user='root',
                                      password='C1sc0123@')

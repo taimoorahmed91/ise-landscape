@@ -7,7 +7,7 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 
 
-connection = mysql.connector.connect(host='odbc.taimoorlab.local',
+connection = mysql.connector.connect(host='127.0.0.1',
                                      database='landscape',
                                      user='root',
                                      password='C1sc0123@')
@@ -77,10 +77,14 @@ dacl_code = json_response2['AuthorizationProfile']['daclName']
 
 #dacl_name = str(dacl_code)
 #print(dacl_name)
-
+print(authz)
 
 cursor = connection.cursor(dictionary=True)
-sql_insert_query = "INSERT INTO temp (dacl, expired) VALUES (%s,'no')"
-val = (dacl_code,)
+sql_insert_query = "INSERT INTO temp (dacl, authz, expired) VALUES (%s, %s,'no')"
+val = (dacl_code, authz)
 cursor.execute(sql_insert_query, val)
-connection.commit()
+connection.commit(
+
+
+
+        )

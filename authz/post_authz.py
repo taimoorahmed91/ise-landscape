@@ -7,7 +7,7 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 
 
-connection = mysql.connector.connect(host='odbc.taimoorlab.local',
+connection = mysql.connector.connect(host='127.0.0.1',
                                      database='landscape',
                                      user='root',
                                      password='C1sc0123@')
@@ -69,3 +69,20 @@ post_url ='https://ise-proxy2.taimoorlab.local/ers/config/authorizationprofile'
 
 response_post = requests.request("POST", post_url, headers=headers, data=result, verify=False)
 #print(response_post)
+
+
+http_code = str(response_post)
+http_code = http_code[:-1]
+http_code = http_code[1:]
+print(http_code)
+
+
+
+## updates to be pushed to db are from here
+
+
+cursor = connection.cursor(dictionary=True)
+sql_update_query = """Update authz set code_post = %s where authz = %s"""
+input_data = (http_code, authz)
+cursor.execute(sql_update_query, input_data)
+connection.commit()

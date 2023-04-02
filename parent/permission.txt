@@ -1,0 +1,2 @@
+
+sudo chgrp -R www-data /root/ise-landscape/

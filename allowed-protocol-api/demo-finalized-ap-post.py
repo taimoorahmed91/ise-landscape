@@ -19,9 +19,7 @@ cursor.execute(sql_select_Query)
 records = cursor.fetchall()
 
 
-for row in records:
-        ap = row["ap"]
-
+ap = sys.argv[1]
 
 
 #print(dacl)
@@ -47,7 +45,7 @@ for value in json_response['SearchResult']['resources']:
         my_id=(value['id'])
 
 
-print(my_id)
+#print(my_id)
 
 
 
@@ -61,7 +59,7 @@ response2 = requests.request("GET", newurl, headers=headers, data=payload, verif
 
 result =(response2.text)
 
-print(result)
+#print(result)
 
 
 

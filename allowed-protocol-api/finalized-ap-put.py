@@ -7,7 +7,7 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 
 
-connection = mysql.connector.connect(host='odbc.taimoorlab.local',
+connection = mysql.connector.connect(host='127.0.0.1',
                                      database='landscape',
                                      user='root',
                                      password='C1sc0123@')
@@ -100,6 +100,9 @@ print(response_put)
 ## updates to be pushed to db are from here
 
 http_code = str(response_put)
+http_code = http_code[:-1]
+http_code = http_code[1:]
+print(http_code)
 
 
 

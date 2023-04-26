@@ -1,4 +1,3 @@
-
 import urllib3
 import requests
 import sys
@@ -19,15 +18,15 @@ cursor.execute(sql_select_Query)
 records = cursor.fetchall()
 
 
-for row in records:
-        ap = row["ap"]
+ap = sys.argv[1]
+#print(ap)
 
 
 
 #print(dacl)
 
 
-url = "https://ise32.taimoorlab.local/ers/config/allowedprotocols/"
+url = "https://ise32.taimoorlab.local:9060/ers/config/allowedprotocols/"
 
 payload={}
 headers = {
@@ -47,12 +46,8 @@ for value in json_response['SearchResult']['resources']:
         my_id=(value['id'])
 
 
-print(my_id)
+#print(my_id)
 
-
-
-
-# start push from here
 
 
 newurl = url + my_id
@@ -61,37 +56,58 @@ response2 = requests.request("GET", newurl, headers=headers, data=payload, verif
 
 result =(response2.text)
 
-print(result)
+#print(result)
 
 
 
 
-post_url ='https://ise-proxy2.taimoorlab.local/ers/config/allowedprotocols'
+# ID and data to be fetched is done now ID to be fetched from second ISE as well
 
 
-response_post = requests.request("POST", post_url, headers=headers, data=result, verify=False)
-print(response_post)
+
+url2 = "https://ise-proxy2.taimoorlab.local/ers/config/allowedprotocols/"
+
+payload={}
+headers = {
+          'Content-Type': 'application/json',
+  'Accept': 'application/json',
+  'Authorization': 'Basic YWRtaW46QzFzYzAxMjNA',
+}
+responses = requests.get(url2, headers=headers, data=payload, verify=False)
+
+json_responses = responses.json()
 
 
-# update code to db
+#print(json.dumps(json_responses))
+
+for value2 in json_responses['SearchResult']['resources']:
+    if value2['name'] == ap:
+        my_id2=(value2['id'])
+
+
+#print(my_id2)
+
+put_url = url2 + my_id2
+
+#print(put_url)
+
+
+
+response_put = requests.request("PUT", put_url, headers=headers, data=result, verify=False)
+print(response_put)
 
 
 ## updates to be pushed to db are from here
 
-
-http_code = str(response_post)
+http_code = str(response_put)
 http_code = http_code[:-1]
 http_code = http_code[1:]
 print(http_code)
 
 
 
-
-
-
-
 cursor = connection.cursor(dictionary=True)
-sql_update_query = """Update ap set code_post = %s where ap = %s"""
+sql_update_query = """Update ap set code_put = %s where ap = %s"""
 input_data = (http_code, ap)
 cursor.execute(sql_update_query, input_data)
 connection.commit()

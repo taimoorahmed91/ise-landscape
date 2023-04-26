@@ -1,4 +1,3 @@
-
 import urllib3
 import requests
 import sys
@@ -12,22 +11,19 @@ connection = mysql.connector.connect(host='127.0.0.1',
                                      database='landscape',
                                      user='root',
                                      password='C1sc0123@')
-sql_select_Query = "select * from ap where expired = 'no'"
-
+sql_select_Query = "select * from authz where expired = 'no'"
 cursor = connection.cursor(dictionary=True)
 cursor.execute(sql_select_Query)
 records = cursor.fetchall()
 
 
-for row in records:
-        ap = row["ap"]
-
+authz = sys.argv[1]
 
 
 #print(dacl)
 
 
-url = "https://ise32.taimoorlab.local/ers/config/allowedprotocols/"
+url = "https://ise32.taimoorlab.local/ers/config/authorizationprofile/"
 
 payload={}
 headers = {
@@ -43,16 +39,12 @@ json_response = response.json()
 #print(json.dumps(json_response))
 
 for value in json_response['SearchResult']['resources']:
-    if value['name'] == ap:
+    if value['name'] == authz:
         my_id=(value['id'])
 
 
-print(my_id)
+#print(my_id)
 
-
-
-
-# start push from here
 
 
 newurl = url + my_id
@@ -61,37 +53,56 @@ response2 = requests.request("GET", newurl, headers=headers, data=payload, verif
 
 result =(response2.text)
 
-print(result)
+#print(result)
+
+json_response2 = response2.json()
+#print(json.dumps(json_response2))
+
+# ID and data to be fetched is done now ID to be fetched from second ISE as well
+
+url2 = "https://ise-proxy2.taimoorlab.local/ers/config/authorizationprofile/"
+
+payload={}
+headers = {
+          'Content-Type': 'application/json',
+  'Accept': 'application/json',
+  'Authorization': 'Basic YWRtaW46QzFzYzAxMjNA',
+}
+responses = requests.get(url2, headers=headers, data=payload, verify=False)
+
+json_responses = responses.json()
 
 
+#print(json.dumps(json_responses))
+
+for value2 in json_responses['SearchResult']['resources']:
+    if value2['name'] == authz:
+        my_id2=(value2['id'])
 
 
-post_url ='https://ise-proxy2.taimoorlab.local/ers/config/allowedprotocols'
+#print(my_id2)
+
+put_url = url2 + my_id2
+
+#print(put_url)
 
 
-response_post = requests.request("POST", post_url, headers=headers, data=result, verify=False)
-print(response_post)
+response_put = requests.request("PUT", put_url, headers=headers, data=result, verify=False)
+#print(response_post)
 
 
-# update code to db
-
-
-## updates to be pushed to db are from here
-
-
-http_code = str(response_post)
+http_code = str(response_put)
 http_code = http_code[:-1]
 http_code = http_code[1:]
 print(http_code)
 
 
 
-
-
+## updates to be pushed to db are from here
 
 
 cursor = connection.cursor(dictionary=True)
-sql_update_query = """Update ap set code_post = %s where ap = %s"""
-input_data = (http_code, ap)
+sql_update_query = """Update authz set code_put = %s where authz = %s"""
+input_data = (http_code, authz)
 cursor.execute(sql_update_query, input_data)
 connection.commit()

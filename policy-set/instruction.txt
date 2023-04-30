@@ -1,0 +1,8 @@
+-rw-r--r--  1 root root     2556 Apr 30 18:24 authentication_post.py
+-rw-r--r--  1 root root     1434 Apr 29 23:08 dstid.py
+-rw-r--r--  1 root www-data 1429 Apr 29 23:06 srcid.py
+
+
+these are to be run to post
+rest are to be run toghether to put
+

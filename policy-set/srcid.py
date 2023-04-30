@@ -5,11 +5,11 @@ import json
 import mysql.connector
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
+#will accept policy name
 
 
 
-
-id = sys.argv[1]
+policyset = sys.argv[1]
 
 
 
@@ -20,17 +20,12 @@ connection = mysql.connector.connect(host='127.0.0.1',
                                      password='C1sc0123@')
 sql_select_Query = "select name from policyset where id = id"
 
-cursor = connection.cursor(dictionary=True)
-cursor.execute(sql_select_Query)
-records = cursor.fetchall()
 
 
 #print(records)
 
 
 
-for row in records:
-        policyset = row["name"]
 
 
 #print(policyset)
@@ -66,8 +61,8 @@ for value in json_response['response']:
 
 
 cursor = connection.cursor(dictionary=True)
-sql_update_query = """Update policyset set srcid = %s where id = %s"""
-input_data = (my_id,id)
+sql_update_query = """Update policyset set srcid = %s where name = %s"""
+input_data = (my_id,policyset)
 cursor.execute(sql_update_query, input_data)
 connection.commit()
 

@@ -6,12 +6,15 @@ import mysql.connector
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 
-#will accept policy name
+
+#will accept policy name and dsturl
 
 
-policyset = sys.argv[1]
 
 
+
+name = sys.argv[1] 
+dsturl = sys.argv[2]
 
 
 connection = mysql.connector.connect(host='127.0.0.1',
@@ -20,16 +23,7 @@ connection = mysql.connector.connect(host='127.0.0.1',
                                      password='C1sc0123@')
 
 
-#print(records)
 
-
-
-
-
-#print(policyset)
-
-
-url = "https://ise-proxy2.taimoorlab.local/api/v1/policy/network-access/policy-set"
 
 payload={}
 headers = {
@@ -37,36 +31,27 @@ headers = {
   'Accept': 'application/json',
   'Authorization': 'Basic YWRtaW46QzFzYzAxMjNA',
 }
-response = requests.get(url, headers=headers, data=payload, verify=False)
 
-json_response = response.json()
+responses = requests.get(dsturl, headers=headers, data=payload, verify=False)
 
-
-#print(json.dumps(json_response))
-
-for value in json_response['response']:
-    if value['name'] == policyset:
-        my_id=(value['id'])
+result = (responses.text)
+#print(result)
 
 
-#print(my_id)
+json_responses = responses.json()
 
 
+#print(json.dumps(json_responses))
 
-## update to DB
+for value in json_responses['response']:
+    if value['rule']['name'] == name:
+        my_ref=(value['link']['href'])
 
-## updates to be pushed to db are from here
+print(my_ref)
 
 
 cursor = connection.cursor(dictionary=True)
-sql_update_query = """Update policyset set dstid = %s where name = %s"""
-input_data = (my_id,policyset)
+sql_update_query = """Update policysetauthen set dsthref = %s where name = %s"""
+input_data = (my_ref, name)
 cursor.execute(sql_update_query, input_data)
 connection.commit()
-
-
-
-
-
-
-

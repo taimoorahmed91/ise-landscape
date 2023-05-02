@@ -32,7 +32,7 @@ srcurl = baseurl_src + "/" + srcid + "/" + authentication
 dsturl = baseurl_dst + "/" + dstid + "/" + authentication
 
 #print(srcurl)
-#print(dsturl)
+print(dsturl)
 
 
 payload={}
@@ -68,7 +68,7 @@ while i < length:
     #print("this is separation")
     response_post = requests.request("POST", dsturl, headers=headers, data=final_result, verify=False)
     output = (response_post.text)
-    #print(output)
+    print(output)
     response_post = str(response_post)
     response_post = response_post[:-1]
     response_post = response_post[1:]

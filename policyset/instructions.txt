@@ -1,0 +1,9 @@
+insetid.py  = inserts ID into policy set table
+policyset.py = creates a file for the policy set added
+authentication = creates authentication files found into the policy set and updates D
+
+
+insert_dstpolicysetid.py = will insert the destination policy ID
+push_post.py = will open file and post at destination
+put_post.py = will open file and put at destination
+

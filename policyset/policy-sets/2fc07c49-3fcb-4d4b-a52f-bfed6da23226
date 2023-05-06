@@ -1,0 +1,29 @@
+{
+  "version" : "1.0.0",
+  "response" : {
+    "default" : false,
+    "id" : "2fc07c49-3fcb-4d4b-a52f-bfed6da23226",
+    "name" : "WSA-Admin",
+    "description" : null,
+    "hitCounts" : 0,
+    "rank" : 0,
+    "state" : "enabled",
+    "condition" : {
+      "link" : null,
+      "conditionType" : "ConditionAttributes",
+      "isNegate" : false,
+      "dictionaryName" : "DEVICE",
+      "attributeName" : "Device Type",
+      "operator" : "equals",
+      "dictionaryValue" : null,
+      "attributeValue" : "All Device Types#Proxy"
+    },
+    "serviceName" : "Default Network Access",
+    "isProxy" : false,
+    "link" : {
+      "rel" : "self",
+      "href" : "https://ise32.taimoorlab.local/api/v1/policy/network-access/policy-set/2fc07c49-3fcb-4d4b-a52f-bfed6da23226",
+      "type" : "application/json"
+    }
+  }
+}

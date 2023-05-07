@@ -66,9 +66,7 @@ while i < length:
     response2 = requests.get(srcauthurl, headers=headers, data=payload, verify=False)
     json_response2 = response2.json()
     initial_result = json_response2['response']
-    del initial_result['rule']['rank']
     #print(initial_result)
-    del initial_result['rule']['id']
     final_result = json.dumps(initial_result)
     #print(final_result)
     filename = initial_filename + my_id

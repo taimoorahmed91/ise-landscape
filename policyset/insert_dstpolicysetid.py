@@ -28,7 +28,7 @@ url = first_half_url + dstise + second_half_url
 #print(url)
 
 
-url = "https://ise-proxy2.taimoorlab.local/api/v1/policy/network-access/policy-set"
+#url = "https://ise-proxy2.taimoorlab.local/api/v1/policy/network-access/policy-set"
 
 payload={}
 headers = {
@@ -48,7 +48,7 @@ for value in json_response['response']:
         my_id=(value['id'])
 
 
-print(my_id)
+#print(my_id)
 
 
 

@@ -80,7 +80,7 @@ out_id = json_response['response']['rule']['id']
 response_post = str(response_post)
 response_post = response_post[:-1]
 response_post = response_post[1:]
-#print(response_post)
+print(response_post)
 
 
 

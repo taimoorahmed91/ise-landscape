@@ -69,7 +69,7 @@ output = (response_post.text)
 
 
 json_response = response_post.json()
-#print(json_response)
+print(json_response)
 
 i = 0
 

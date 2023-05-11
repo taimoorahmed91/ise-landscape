@@ -55,6 +55,10 @@ length = 100
 i = 0
 
 initial_filename = "/root/ise-landscape/policyset/authentications/"  
+initial_webfilename = "/var/www/html/landscape/authentications/"
+
+
+
 
 while i < length:
     my_id = json_response['response'][i]['rule']['id']
@@ -64,6 +68,7 @@ while i < length:
     srcauthurl = url + "/" + my_id
     #print(srcauthurl)
     response2 = requests.get(srcauthurl, headers=headers, data=payload, verify=False)
+    text_result = (response2.text)
     json_response2 = response2.json()
     initial_result = json_response2['response']
     del initial_result['rule']['rank']
@@ -72,9 +77,13 @@ while i < length:
     final_result = json.dumps(initial_result)
     #print(final_result)
     filename = initial_filename + my_id
+    filename_web = initial_webfilename + my_id
     with open(filename, "w") as o:
             with contextlib.redirect_stdout(o):
                     print(final_result)
+    with open(filename_web, "w") as o:
+            with contextlib.redirect_stdout(o):
+                    print(text_result)
     response_post = str(response2)
     response_post = response_post[:-1]
     response_post = response_post[1:]

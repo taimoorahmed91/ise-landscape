@@ -49,18 +49,3 @@ for value in json_response['response']:
 
 
 print(my_id)
-
-
-
-
-## update to DB
-
-## updates to be pushed to db are from here
-
-
-cursor = connection.cursor(dictionary=True)
-sql_update_query = """Update replicateauthentication set dstpolicysetid = %s where id = %s"""
-input_data = (my_id,insertid )
-cursor.execute(sql_update_query, input_data)
-connection.commit()
-

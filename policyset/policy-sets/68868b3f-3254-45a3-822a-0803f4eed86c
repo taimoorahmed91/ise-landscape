@@ -1,0 +1,29 @@
+{
+  "version" : "1.0.0",
+  "response" : {
+    "default" : false,
+    "id" : "68868b3f-3254-45a3-822a-0803f4eed86c",
+    "name" : "Emmanuel-Policy-Set",
+    "description" : null,
+    "hitCounts" : 0,
+    "rank" : 1,
+    "state" : "enabled",
+    "condition" : {
+      "link" : null,
+      "conditionType" : "ConditionAttributes",
+      "isNegate" : false,
+      "dictionaryName" : "Normalised Radius",
+      "attributeName" : "RadiusFlowType",
+      "operator" : "equals",
+      "dictionaryValue" : null,
+      "attributeValue" : "Wired802_1x"
+    },
+    "serviceName" : "Default Network Access",
+    "isProxy" : false,
+    "link" : {
+      "rel" : "self",
+      "href" : "https://ise32.taimoorlab.local/api/v1/policy/network-access/policy-set/68868b3f-3254-45a3-822a-0803f4eed86c",
+      "type" : "application/json"
+    }
+  }
+}

@@ -8,7 +8,7 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 
 fqdn = sys.argv[1]
-
+inheritid = sys.argv[2]
 
 connection = mysql.connector.connect(host='127.0.0.1',
                                      database='mise',
@@ -63,8 +63,8 @@ while i < length:
     response_post = response_post[1:]
     #print(response_post)
     cursor = connection.cursor(dictionary=True)
-    sql_insert_query = "INSERT INTO policyset (policyset,policysetid,isename,get_code) VALUES (%s, %s, %s, %s)"
-    val = (my_name,my_id,fqdn,response_post)
+    sql_insert_query = "INSERT INTO policyset (policyset,policysetid,isename,get_code,inheritid) VALUES (%s, %s, %s, %s, %s)"
+    val = (my_name,my_id,fqdn,response_post,inheritid)
     cursor.execute(sql_insert_query, val)
     connection.commit()
 

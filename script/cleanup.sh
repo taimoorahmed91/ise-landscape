@@ -30,6 +30,7 @@ sql_commands=(
     "DELETE FROM nad;"
     "DELETE FROM policyset;"
     "DELETE FROM sgt;"
+    "DELETE FROM uploads;"
     "ALTER TABLE ap AUTO_INCREMENT = 0;"
     "ALTER TABLE authentication AUTO_INCREMENT = 0;"
     "ALTER TABLE authorization AUTO_INCREMENT = 0;"
@@ -39,6 +40,7 @@ sql_commands=(
     "ALTER TABLE nad AUTO_INCREMENT = 0;"
     "ALTER TABLE policyset AUTO_INCREMENT = 0;"
     "ALTER TABLE sgt AUTO_INCREMENT = 0;"
+    "ALTER TABLE uploads AUTO_INCREMENT = 0;"
 )
 
 # Run SQL commands

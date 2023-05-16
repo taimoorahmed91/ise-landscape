@@ -51,6 +51,7 @@ for policy_set in policy_sets:
         with contextlib.redirect_stdout(o):
             print(text_result)
     response_post = str(response2)[1:-1]
+    print(inheritid)
     insert_values.append((my_name, my_id, fqdn, response_post, inheritid))
 
 # Execute the batch insert
@@ -61,7 +62,7 @@ connection.commit()
 delete_query = """
     DELETE t1 FROM policyset t1
     INNER JOIN policyset t2 ON CONCAT(t1.policysetid, t1.isename) = CONCAT(t2.policysetid, t2.isename)
-    WHERE t1.id > t2.id
+    WHERE t1.id  < t2.id
 """
 
 # Execute delete query

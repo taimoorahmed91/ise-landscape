@@ -18,7 +18,7 @@ connection = mysql.connector.connect(
 cursor = connection.cursor(dictionary=True)
 
 url1 = "https://"
-url2 = "/ers/config/downloadableacl"
+url2 = "/ers/config/authorizationprofile"
 url = url1 + fqdn + url2
 
 initial_webfilename = "/var/www/html/landscape/configs/authz/"
@@ -60,7 +60,7 @@ connection.commit()
 delete_query = """
     DELETE t1 FROM authz t1
     INNER JOIN authz t2 ON CONCAT(t1.authzid, t1.isename) = CONCAT(t2.authzid, t2.isename)
-    WHERE t1.id > t2.id
+    WHERE t1.id  < t2.id
 """
 
 # Execute delete query

@@ -70,7 +70,7 @@ connection.commit()
 delete_query = """
     DELETE t1 FROM dacl t1
     INNER JOIN dacl t2 ON CONCAT(t1.daclid, t1.isename) = CONCAT(t2.daclid, t2.isename)
-    WHERE t1.id > t2.id
+    WHERE t1.id < t2.id
 """
 
 #print("Generated DELETE query:")

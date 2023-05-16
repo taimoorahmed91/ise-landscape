@@ -4,101 +4,82 @@ import sys
 import json
 import mysql.connector
 import contextlib
+
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
-
-
-#will accept isename and policysetid and policysetname
-
 
 isename = sys.argv[1]
 policysetid = sys.argv[2]
 policysetname = sys.argv[3]
 
-connection = mysql.connector.connect(host='127.0.0.1',
-                                     database='mise',
-                                     user='root',
-                                     password='C1sc0123@')
-
-
+connection = mysql.connector.connect(
+    host='127.0.0.1',
+    database='mise',
+    user='root',
+    password='C1sc0123@'
+)
+cursor = connection.cursor(dictionary=True)
 
 authentication = "/authentication"
 
-
-
-
 firsthalfurl = "https://"
 secondhalfurl = "/api/v1/policy/network-access/policy-set/"
+url = firsthalfurl + isename + secondhalfurl + policysetid + authentication
 
-url = firsthalfurl + isename + secondhalfurl + policysetid + authentication 
-
-#print(url)
-
-
-
-
-payload={}
+payload = {}
 headers = {
-          'Content-Type': 'application/json',
-  'Accept': 'application/json',
-  'Authorization': 'Basic YWRtaW46QzFzYzAxMjNA',
+    'Content-Type': 'application/json',
+    'Accept': 'application/json',
+    'Authorization': 'Basic YWRtaW46QzFzYzAxMjNA',
 }
 response = requests.get(url, headers=headers, data=payload, verify=False)
-result =(response.text)
-#print(result)
+result = response.text
 
 json_response = response.json()
-#print(json_response)
+resources = json_response['response']
 
+length = len(resources)
 
-length = 100
-
-i = 0
-
-initial_filename = "/root/ise-landscape/mise/configs/authentications/"  
+initial_filename = "/root/ise-landscape/mise/configs/authentications/"
 initial_webfilename = "/var/www/html/landscape/configs/authentications/"
 
+# Prepare the batch insert statement
+insert_query = "INSERT INTO authentication (authentication, authenticationid, policyset, isename, get_code) VALUES (%s, %s, %s, %s, %s)"
+insert_values = []
 
-
-
-while i < length:
-    my_id = json_response['response'][i]['rule']['id']
-    #print(my_id)
-    my_name = json_response['response'][i]['rule']['name']
-    #print(my_name)
+for resource in resources:
+    my_id = resource['rule']['id']
+    my_name = resource['rule']['name']
     srcauthurl = url + "/" + my_id
-    #print(srcauthurl)
     response2 = requests.get(srcauthurl, headers=headers, data=payload, verify=False)
-    text_result = (response2.text)
+    text_result = response2.text
     json_response2 = response2.json()
     initial_result = json_response2['response']
     del initial_result['rule']['rank']
-    #print(initial_result)
     del initial_result['rule']['id']
     final_result = json.dumps(initial_result)
-    #print(final_result)
     filename = initial_filename + my_id
     filename_web = initial_webfilename + my_id
     with open(filename, "w") as o:
-            with contextlib.redirect_stdout(o):
-                    print(final_result)
+        with contextlib.redirect_stdout(o):
+            print(final_result)
     with open(filename_web, "w") as o:
-            with contextlib.redirect_stdout(o):
-                    print(text_result)
-    response_post = str(response2)
-    response_post = response_post[:-1]
-    response_post = response_post[1:]
-    #print(response_post)
-    
+        with contextlib.redirect_stdout(o):
+            print(text_result)
+    response_post = str(response2)[1:-1]
+    insert_values.append((my_name, my_id, policysetname, isename, response_post))
 
+# Execute the batch insert
+cursor.executemany(insert_query, insert_values)
+connection.commit()
 
+# Delete query
+delete_query = """
+    DELETE t1 FROM authentication t1
+    INNER JOIN authentication t2 ON CONCAT(t1.authenticationid, t1.isename) = CONCAT(t2.authenticationid, t2.isename)
+    WHERE t1.id < t2.id
+"""
 
-
-    cursor = connection.cursor(dictionary=True)
-    sql_insert_query = "INSERT INTO authentication (authentication,authenticationid,policyset,isename,get_code) VALUES ( %s, %s, %s, %s, %s)"
-    val = (my_name,my_id,policysetname,isename,response_post)
-    cursor.execute(sql_insert_query, val)
-    connection.commit()
-    i += 1
-
-
+# Execute delete query
+cursor.execute(delete_query)
+connection.commit()
 

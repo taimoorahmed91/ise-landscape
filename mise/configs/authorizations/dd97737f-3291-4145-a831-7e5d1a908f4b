@@ -1,0 +1,1 @@
+{"rule": {"default": true, "name": "Default", "hitCounts": 0, "state": "enabled", "condition": null}, "profile": ["DenyAccess"], "securityGroup": null, "link": {"rel": "self", "href": "https://ise-proxy2.taimoorlab.local/api/v1/policy/network-access/policy-set/2b0a553e-e985-4868-8ff3-228d6fd7b3e5/authorization/dd97737f-3291-4145-a831-7e5d1a908f4b", "type": "application/json"}}

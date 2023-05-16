@@ -60,7 +60,7 @@ connection.commit()
 delete_query = """
     DELETE t1 FROM sgt t1
     INNER JOIN sgt t2 ON CONCAT(t1.sgtid, t1.isename) = CONCAT(t2.sgtid, t2.isename)
-    WHERE t1.id > t2.id
+    WHERE t1.id < t2.id
 """
 
 # Execute delete query

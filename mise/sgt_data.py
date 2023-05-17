@@ -4,7 +4,7 @@ import sys
 import json
 import mysql.connector
 import contextlib
-
+import datetime
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 fqdn = sys.argv[1]
@@ -31,6 +31,22 @@ headers = {
 }
 response = requests.get(url, headers=headers, data=payload, verify=False)
 result = response.text
+
+### set time parameters
+current_time = datetime.datetime.now()
+
+# Format the time as a string
+time_string = current_time.strftime("%Y-%m-%d %H:%M:%S")
+
+
+
+
+file_path = "/var/www/html/landscape/logging/sgt-logs"
+with open(file_path, "a") as file:
+    # Append the output to the file
+    file.write(time_string + "\n")
+    file.write(result)
+
 
 json_response = response.json()
 resources = json_response['SearchResult']['resources']

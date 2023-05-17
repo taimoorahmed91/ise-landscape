@@ -4,7 +4,7 @@ import sys
 import json
 import mysql.connector
 import contextlib
-
+import datetime
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 fqdn = sys.argv[1]
@@ -33,6 +33,23 @@ headers = {
 response = requests.get(url, headers=headers, data=payload, verify=False)
 result = response.text
 
+
+### set time parameters
+current_time = datetime.datetime.now()
+
+# Format the time as a string
+time_string = current_time.strftime("%Y-%m-%d %H:%M:%S")
+
+
+
+
+file_path = "/var/www/html/landscape/logging/policyset-logs"
+with open(file_path, "a") as file:
+    # Append the output to the file
+    file.write(time_string + "\n")
+    file.write(result)
+
+
 json_response = response.json()
 policy_sets = json_response['response']
 
@@ -51,7 +68,7 @@ for policy_set in policy_sets:
         with contextlib.redirect_stdout(o):
             print(text_result)
     response_post = str(response2)[1:-1]
-    print(inheritid)
+    #print(inheritid)
     insert_values.append((my_name, my_id, fqdn, response_post, inheritid))
 
 # Execute the batch insert

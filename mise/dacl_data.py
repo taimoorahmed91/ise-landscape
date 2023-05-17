@@ -4,7 +4,7 @@ import sys
 import json
 import mysql.connector
 import contextlib
-
+import datetime
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 # MySQL credentials
@@ -15,6 +15,14 @@ connection = mysql.connector.connect(
     password='C1sc0123@'
 )
 cursor = connection.cursor(dictionary=True)
+
+
+### set time parameters
+current_time = datetime.datetime.now()
+
+# Format the time as a string
+time_string = current_time.strftime("%Y-%m-%d %H:%M:%S")
+
 
 fqdn = sys.argv[1]
 
@@ -38,6 +46,15 @@ result = response.text
 json_response = response.json()
 resources = json_response['SearchResult']['resources']
 
+
+file_path = "/var/www/html/landscape/logging/dacl-logs"
+with open(file_path, "a") as file:
+    # Append the output to the file
+    file.write(time_string + "\n")
+    file.write(result)
+
+
+
 # Prepare the batch insert statement
 insert_query = "INSERT INTO dacl (dacl, daclid, isename, get_code) VALUES (%s, %s, %s, %s)"
 insert_values = []
@@ -58,7 +75,7 @@ for resource in resources:
         response_post = response_post[:-1]
         response_post = response_post[1:]
         insert_values.append((my_name, my_id, fqdn, response_post))
-
+        
     except IndexError:
         break
 

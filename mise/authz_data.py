@@ -4,8 +4,15 @@ import sys
 import json
 import mysql.connector
 import contextlib
+import datetime
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+
+### set time parameters
+current_time = datetime.datetime.now()
+
+# Format the time as a string
+time_string = current_time.strftime("%Y-%m-%d %H:%M:%S")
 
 fqdn = sys.argv[1]
 
@@ -34,6 +41,14 @@ result = response.text
 
 json_response = response.json()
 resources = json_response['SearchResult']['resources']
+
+file_path = "/var/www/html/landscape/logging/authz-logs"
+with open(file_path, "a") as file:
+    # Append the output to the file
+    file.write(time_string + "\n")
+    file.write(result)
+
+
 
 # Prepare the batch insert statement
 insert_query = "INSERT INTO authz (authz, authzid, isename, get_code) VALUES (%s, %s, %s, %s)"

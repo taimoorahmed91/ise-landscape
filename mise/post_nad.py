@@ -87,8 +87,8 @@ input_data = (response_post,insertid )
 cursor.execute(sql_update_query, input_data)
 connection.commit()
 
-cursor = connection.cursor(dictionary=True)
-sql_update_query = """Update nad set queue = 'no' where id = %s"""
-input_data = (insertid, )
-cursor.execute(sql_update_query, input_data )
-connection.commit()
+#cursor = connection.cursor(dictionary=True)
+#sql_update_query = """Update nad set queue = 'no' where id = %s"""
+#input_data = (insertid, )
+#cursor.execute(sql_update_query, input_data )
+#connection.commit()

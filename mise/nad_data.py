@@ -52,13 +52,14 @@ json_response = response.json()
 resources = json_response['SearchResult']['resources']
 
 # Prepare the batch insert statement
-insert_query = "INSERT INTO nad (nad, nadid, isename, get_code) VALUES (%s, %s, %s, %s)"
+insert_query = "INSERT INTO nad (nad, nadid, isename, get_code,href) VALUES (%s, %s, %s, %s,%s)"
 insert_values = []
 
 for resource in resources:
     my_id = resource['id']
     my_name = resource['name']
     srcauthurl = url + "/" + my_id
+    href = resource['link']['href'] 
     response2 = requests.get(srcauthurl, headers=headers, data=payload, verify=False)
     text_result = response2.text
     filename_web = initial_webfilename + my_id
@@ -66,7 +67,7 @@ for resource in resources:
         with contextlib.redirect_stdout(o):
             print(text_result)
     response_post = str(response2)[1:-1]
-    insert_values.append((my_name, my_id, fqdn, response_post))
+    insert_values.append((my_name, my_id, fqdn, response_post,href))
 
 # Execute the batch insert
 cursor.executemany(insert_query, insert_values)

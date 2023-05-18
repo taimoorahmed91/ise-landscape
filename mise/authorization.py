@@ -39,13 +39,14 @@ length = len(json_response['response'])
 initial_filename = "/root/ise-landscape/mise/configs/authorizations/"
 initial_webfilename = "/var/www/html/landscape/configs/authorizations/"
 
-insert_query = "INSERT INTO authorization (authorization, authorizationid, policyset, isename, get_code) VALUES (%s, %s, %s, %s, %s)"
+insert_query = "INSERT INTO authorization (authorization, authorizationid, policyset, isename, get_code,href) VALUES (%s, %s, %s, %s, %s,%s)"
 insert_values = []
 
 for i in range(length):
     my_id = json_response['response'][i]['rule']['id']
     my_name = json_response['response'][i]['rule']['name']
     srcauthurl = url + "/" + my_id
+    href = json_response['response'][i]['link']['href']
     response2 = requests.get(srcauthurl, headers=headers, data=payload, verify=False)
     text_result = response2.text
     json_response2 = response2.json()
@@ -64,7 +65,7 @@ for i in range(length):
     response_post = str(response2)
     response_post = response_post[:-1]
     response_post = response_post[1:]
-    insert_values.append((my_name, my_id, policysetname, isename, response_post))
+    insert_values.append((my_name, my_id, policysetname, isename, response_post,href))
 
 cursor = connection.cursor(dictionary=True)
 cursor.executemany(insert_query, insert_values)

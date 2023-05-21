@@ -18,6 +18,8 @@ rm -rf /var/www/html/landscape/configs/sgt/*
 rm -rf /root/ise-landscape/mise/configs/authentications/*
 rm -rf /root/ise-landscape/mise/configs/authorizations/*
 rm -rf /root/ise-landscape/mise/configs/authentications/*
+rm -rf /var/www/html/landscape/deployments/*
+
 
 # SQL commands
 sql_commands=(

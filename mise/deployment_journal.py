@@ -27,6 +27,18 @@ SELECT `sgt` AS `name`, 'sgt' AS `table_name` FROM sgt WHERE `queue` = 'yes'
 
 UNION ALL
 SELECT `nad` AS `name`, 'nad' AS `table_name` FROM nad WHERE `queue` = 'yes'
+
+
+UNION ALL
+SELECT `fqdn` AS `name`, 'deployments' AS `table_name` FROM deployments WHERE `marked` = 'yes'
+
+
+
+
+
+
+
+
 ORDER BY `table_name`;
 
 """
@@ -59,5 +71,38 @@ filename = f"/var/www/html/landscape/deployments/deployment_{timestamp}.json"
 with open(filename, 'w') as file:
     json.dump(data, file, indent=4)
 
-print(f"Data written to {filename}")
+#print(f"Data written to {filename}")
+
+#print(filename)
+last_part = filename.split("/")[-1]
+first = filename.split("/")[-2]
+
+first_part = first + "/" + last_part
+
+connection = mysql.connector.connect(
+    host='127.0.0.1',
+    user='root',
+    password='C1sc0123@',
+    database='mise'
+)
+cursor = connection.cursor()
+
+
+query = "INSERT INTO deployhistory (name,path) VALUES (%s, %s)"
+values = (last_part , first_part)
+cursor.execute(query, values)
+connection.commit()
+
+
+
+
+
+
+
+
+
+
+
+
+
 

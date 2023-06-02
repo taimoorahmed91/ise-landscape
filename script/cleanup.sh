@@ -9,6 +9,7 @@ database="mise"
 rm -rf /var/www/html/landscape/configs/authz/*
 rm -rf /var/www/html/landscape/configs/ap/*
 rm -rf /var/www/html/landscape/configs/authentications/*
+rm -rf /var/www/html/landscape/configs/authorizations/*
 rm -rf /var/www/html/landscape/configs/authz/*
 rm -rf /var/www/html/landscape/configs/conditions/*
 rm -rf /var/www/html/landscape/configs/dacl/*
@@ -19,7 +20,6 @@ rm -rf /root/ise-landscape/mise/configs/authentications/*
 rm -rf /root/ise-landscape/mise/configs/authorizations/*
 rm -rf /root/ise-landscape/mise/configs/authentications/*
 rm -rf /var/www/html/landscape/deployments/*
-
 
 # SQL commands
 sql_commands=(

@@ -34,6 +34,7 @@ sql_commands=(
     "DELETE FROM sgt;"
     "DELETE FROM uploads;"
     "DELETE FROM deployhistory;"
+    "DELETE FROM policysetdeploy;"
     "DELETE FROM patch;"
     "ALTER TABLE ap AUTO_INCREMENT = 0;"
     "ALTER TABLE authentication AUTO_INCREMENT = 0;"
@@ -47,6 +48,7 @@ sql_commands=(
     "ALTER TABLE uploads AUTO_INCREMENT = 0;"
     "ALTER TABLE deployhistory AUTO_INCREMENT = 0;"
     "ALTER TABLE patch AUTO_INCREMENT = 0;"
+    "ALTER TABLE policysetdeploy AUTO_INCREMENT = 0;"
 )
 
 # Run SQL commands

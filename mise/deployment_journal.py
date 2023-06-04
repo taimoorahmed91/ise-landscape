@@ -30,6 +30,15 @@ SELECT `nad` AS `name`, 'nad' AS `table_name` FROM nad WHERE `queue` = 'yes'
 
 
 UNION ALL
+SELECT `policyset` AS `name`, 'policyset' AS `table_name` FROM policyset WHERE `queue` = 'yes'
+
+UNION ALL
+SELECT `authentication` AS `name`, 'authentication' AS `table_name` FROM authentication WHERE `queue` = 'yes'
+
+
+
+
+UNION ALL
 SELECT `fqdn` AS `name`, 'deployments' AS `table_name` FROM deployments WHERE `marked` = 'yes'
 
 
@@ -79,6 +88,26 @@ first = filename.split("/")[-2]
 
 first_part = first + "/" + last_part
 
+connection = mysql.connector.connect(host='127.0.0.1',
+                                     database='mise',
+                                     user='root',
+                                     password='C1sc0123@')
+
+
+sql_select_Query = "select * from policysetdeploy ORDER BY id DESC LIMIT 1"
+
+cursor = connection.cursor(dictionary=True)
+cursor.execute(sql_select_Query)
+records = cursor.fetchall()
+
+
+for row in records:
+        comments = row["comments"]
+
+
+
+
+
 connection = mysql.connector.connect(
     host='127.0.0.1',
     user='root',
@@ -88,8 +117,8 @@ connection = mysql.connector.connect(
 cursor = connection.cursor()
 
 
-query = "INSERT INTO deployhistory (name,path) VALUES (%s, %s)"
-values = (last_part , first_part)
+query = "INSERT INTO deployhistory (name,path,comments) VALUES (%s, %s, %s)"
+values = (last_part , first_part, comments)
 cursor.execute(query, values)
 connection.commit()
 

@@ -20,7 +20,7 @@ connection = mysql.connector.connect(host='127.0.0.1',
                                      password='C1sc0123@')
 
 
-sql_select_Query = "select * from policysetdeploy"
+sql_select_Query = "select * from policysetdeploy ORDER BY id DESC LIMIT 1"
 
 cursor = connection.cursor(dictionary=True)
 cursor.execute(sql_select_Query)

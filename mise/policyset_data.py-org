@@ -22,7 +22,6 @@ url1 = "https://"
 url2 = "/api/v1/policy/network-access/policy-set"
 url = url1 + fqdn + url2
 
-initial_filename = "/root/ise-landscape/mise/configs/policyset/"
 initial_webfilename = "/var/www/html/landscape/configs/policyset/"
 
 payload = {}
@@ -65,20 +64,10 @@ for policy_set in policy_sets:
     href = policy_set['link']['href']
     response2 = requests.get(srcauthurl, headers=headers, data=payload, verify=False)
     text_result = response2.text
-    json_response2 = response2.json()
-    initial_result = json_response2['response']
-    del initial_result['rank']
-    del initial_result['id']
-    final_result = json.dumps(initial_result)
-    filename = initial_filename + my_id
     filename_web = initial_webfilename + my_id
-    with open(filename, "w") as o:
-        with contextlib.redirect_stdout(o):
-            print(final_result)
     with open(filename_web, "w") as o:
         with contextlib.redirect_stdout(o):
             print(text_result)
-    
     response_post = str(response2)[1:-1]
     #print(inheritid)
     insert_values.append((my_name, my_id, fqdn, response_post, href, inheritid))

@@ -86,3 +86,17 @@ for row in results:
     sgtid = row['sgtid']
     subprocess.run(['sudo', '-S', 'python3', '/root/ise-landscape/mise/post_sgt.py', str(id), fqdn, sgtid], check=True)
 
+
+
+# Process policyset
+query_policyset = "SELECT id, policysetid FROM policyset WHERE queue = 'yes'"
+# Execute your query and retrieve the results
+cursor = connection.cursor(dictionary=True)
+cursor.execute(query_policyset)
+results = cursor.fetchall()
+
+
+for row in results:
+    id = row['id']
+    policysetid = row['policysetid']
+    subprocess.run(['sudo', '-S', 'python3', '/root/ise-landscape/mise/post_policyset.py', str(id), fqdn, policysetid], check=True)

@@ -18,7 +18,7 @@ rm -rf /var/www/html/landscape/configs/policyset/*
 rm -rf /var/www/html/landscape/configs/sgt/*
 rm -rf /root/ise-landscape/mise/configs/authentications/*
 rm -rf /root/ise-landscape/mise/configs/authorizations/*
-rm -rf /root/ise-landscape/mise/configs/authentications/*
+rm -rf /root/ise-landscape/mise/configs/policyset/*
 rm -rf /var/www/html/landscape/deployments/*
 
 # SQL commands

@@ -1,0 +1,1 @@
+{"rule": {"default": true, "name": "Default", "hitCounts": 0, "state": "enabled", "condition": null}, "profile": ["DenyAccess"], "securityGroup": null, "link": {"rel": "self", "href": "https://10.52.13.157/api/v1/policy/network-access/policy-set/a34bc6ed-d9f3-4092-a833-e46f902ac073/authorization/8472d206-c844-482c-9664-a21be100e137", "type": "application/json"}}

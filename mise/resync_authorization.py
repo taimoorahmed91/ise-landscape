@@ -34,7 +34,7 @@ headers = {
     'Authorization': 'Basic YWRtaW46QzFzYzAxMjNA',
 }
 
-initial_webfilename = "/var/www/html/landscape/configs/authorizations/"
+initial_webfilename = "/var/www/html/mise/v0.1/configs/authorizations/"
 initial_filename = "/root/ise-landscape/mise/configs/authorizations/"
 
 

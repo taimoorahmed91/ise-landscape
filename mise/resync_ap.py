@@ -34,7 +34,7 @@ headers = {
     'Authorization': 'Basic YWRtaW46QzFzYzAxMjNA',
 }
 
-initial_webfilename = "/var/www/html/landscape/configs/ap/"
+initial_webfilename = "/var/www/html/mise/v0.1/configs/ap/"
 
       
 response2 = requests.get(url, headers=headers, data=payload, verify=False)

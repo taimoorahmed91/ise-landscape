@@ -21,7 +21,7 @@ url1 = "https://"
 url2 = "/ers/config/allowedprotocols"
 url = url1 + fqdn + url2
 
-initial_webfilename = "/var/www/html/landscape/configs/ap/"
+initial_webfilename = "/var/www/html/mise/v0.1/configs/ap/"
 
 payload = {}
 headers = {
@@ -41,7 +41,7 @@ time_string = current_time.strftime("%Y-%m-%d %H:%M:%S")
 
 
 
-file_path = "/var/www/html/landscape/logging/ap-logs"
+file_path = "/var/www/html/mise/v0.1/logging/ap-logs"
 with open(file_path, "a") as file:
     # Append the output to the file
     file.write(time_string + "\n")

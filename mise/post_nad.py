@@ -48,7 +48,7 @@ headers = {
 }
 
 
-filename = "/var/www/html/landscape/configs/nad/" + nadid
+filename = "/var/www/html/mise/v0.1/configs/nad/" + nadid
 #print(filename)
 
 with open(f'{filename}', 'r', encoding='utf-8') as f:
@@ -62,7 +62,7 @@ output = (response_post.text)
 #print(output)
 
 
-file_path = "/var/www/html/landscape/logging/nad-logs"
+file_path = "/var/www/html/mise/v0.1/logging/nad-logs"
 with open(file_path, "a") as file:
     # Append the output to the file
     file.write(time_string + "\n")

@@ -34,7 +34,7 @@ headers = {
     'Authorization': 'Basic YWRtaW46QzFzYzAxMjNA',
 }
 
-initial_webfilename = "/var/www/html/landscape/configs/dacl/"
+initial_webfilename = "/var/www/html/mise/v0.1/configs/dacl/"
 
       
 response2 = requests.get(url, headers=headers, data=payload, verify=False)
@@ -46,7 +46,7 @@ with open(filename_web, "w") as o:
 
 
 
-file_path = "/var/www/html/landscape/logging/dacl-logs"
+file_path = "/var/www/html/mise/v0.1/logging/dacl-logs"
 with open(file_path, "a") as file:
     # Append the output to the file
     file.write(time_string + "\n")

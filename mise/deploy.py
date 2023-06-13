@@ -118,3 +118,15 @@ for row in results:
     subprocess.run(['sudo', '-S', 'python3', '/root/ise-landscape/mise/post_authentication.py', str(id), fqdn, authenticationid], check=True)
 
 
+# Process authentication
+query_authentication = "SELECT id, authorizationid FROM authorization WHERE queue = 'yes'"
+# Execute your query and retrieve the results
+cursor = connection.cursor(dictionary=True)
+cursor.execute(query_authentication)
+results = cursor.fetchall()
+
+
+for row in results:
+    id = row['id']
+    authorizationid = row['authorizationid']
+    subprocess.run(['sudo', '-S', 'python3', '/root/ise-landscape/mise/post_authorization.py', str(id), fqdn, authorizationid], check=True)

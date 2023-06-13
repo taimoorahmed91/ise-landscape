@@ -74,7 +74,7 @@ connection.close()
 
 # Create a unique filename with date and time
 timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-filename = f"/var/www/html/landscape/deployments/deployment_{timestamp}.json"
+filename = f"/var/www/html/mise/v0.1/deployments/deployment_{timestamp}.json"
 
 # Write the data to a file in JSON format with indentation
 with open(filename, 'w') as file:

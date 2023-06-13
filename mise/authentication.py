@@ -40,7 +40,7 @@ resources = json_response['response']
 length = len(resources)
 
 initial_filename = "/root/ise-landscape/mise/configs/authentications/"
-initial_webfilename = "/var/www/html/landscape/configs/authentications/"
+initial_webfilename = "/var/www/html/mise/v0.1/configs/authentications/"
 
 # Prepare the batch insert statement
 insert_query = "INSERT INTO authentication (authentication, authenticationid, policyset, isename, get_code,href) VALUES (%s, %s, %s, %s, %s, %s)"

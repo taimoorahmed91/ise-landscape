@@ -23,7 +23,7 @@ url2 = "/api/v1/policy/network-access/policy-set"
 url = url1 + fqdn + url2
 
 initial_filename = "/root/ise-landscape/mise/configs/policyset/"
-initial_webfilename = "/var/www/html/landscape/configs/policyset/"
+initial_webfilename = "/var/www/html/mise/v0.1/configs/policyset/"
 
 payload = {}
 headers = {
@@ -44,7 +44,7 @@ time_string = current_time.strftime("%Y-%m-%d %H:%M:%S")
 
 
 
-file_path = "/var/www/html/landscape/logging/policyset-logs"
+file_path = "/var/www/html/mise/v0.1/logging/policyset-logs"
 with open(file_path, "a") as file:
     # Append the output to the file
     file.write(time_string + "\n")

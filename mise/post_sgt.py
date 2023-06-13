@@ -48,7 +48,7 @@ headers = {
 }
 
 
-filename = "/var/www/html/landscape/configs/sgt/" + sgtid
+filename = "/var/www/html/mise/v0.1/configs/sgt/" + sgtid
 #print(filename)
 
 with open(f'{filename}', 'r', encoding='utf-8') as f:
@@ -62,7 +62,7 @@ output = (response_post.text)
 #print(output)
 
 
-file_path = "/var/www/html/landscape/logging/sgt-logs"
+file_path = "/var/www/html/mise/v0.1/logging/sgt-logs"
 with open(file_path, "a") as file:
     # Append the output to the file
     file.write(time_string + "\n")

@@ -21,7 +21,7 @@ url1 = "https://"
 url2 = "/ers/config/networkdevicegroup"
 url = url1 + fqdn + url2
 
-initial_webfilename = "/var/www/html/landscape/configs/nad/"
+initial_webfilename = "/var/www/html/mise/v0.1/configs/nad/"
 
 payload = {}
 headers = {
@@ -42,7 +42,7 @@ time_string = current_time.strftime("%Y-%m-%d %H:%M:%S")
 
 
 
-file_path = "/var/www/html/landscape/logging/nad-logs"
+file_path = "/var/www/html/mise/v0.1/logging/nad-logs"
 with open(file_path, "a") as file:
     # Append the output to the file
     file.write(time_string + "\n")

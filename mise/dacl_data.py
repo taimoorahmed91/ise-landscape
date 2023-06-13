@@ -31,7 +31,7 @@ url2 = "/ers/config/downloadableacl"
 
 url = url1 + fqdn + url2
 
-initial_webfilename = "/var/www/html/landscape/configs/dacl/"
+initial_webfilename = "/var/www/html/mise/v0.1/configs/dacl/"
 
 payload={}
 headers = {
@@ -47,7 +47,7 @@ json_response = response.json()
 resources = json_response['SearchResult']['resources']
 
 
-file_path = "/var/www/html/landscape/logging/dacl-logs"
+file_path = "/var/www/html/mise/v0.1/logging/dacl-logs"
 with open(file_path, "a") as file:
     # Append the output to the file
     file.write(time_string + "\n")

@@ -37,7 +37,7 @@ json_response = response.json()
 length = len(json_response['response'])
 
 initial_filename = "/root/ise-landscape/mise/configs/authorizations/"
-initial_webfilename = "/var/www/html/landscape/configs/authorizations/"
+initial_webfilename = "/var/www/html/mise/v0.1/configs/authorizations/"
 
 insert_query = "INSERT INTO authorization (authorization, authorizationid, policyset, isename, get_code,href) VALUES (%s, %s, %s, %s, %s,%s)"
 insert_values = []

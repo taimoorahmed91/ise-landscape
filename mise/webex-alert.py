@@ -3,9 +3,56 @@ import requests
 import sys
 import mysql.connector
 
-BOT_ACCESS_TOKEN = 'NmM3ZjliOTMtNjkyYi00ZWI1LTliNjItOGNhNWQ3YmJkYzQ2NWM2YWY5MzItMDA3_PF84_1eb65fdf-9643-417f-9974-ad72cae0e10f'
 URL = 'https://api.ciscospark.com/v1/messages'
 MESSAGE_TEXT = ''
+
+
+#BOT_ACCESS_TOKEN = 'NmM3ZjliOTMtNjkyYi00ZWI1LTliNjItOGNhNWQ3YmJkYzQ2NWM2YWY5MzItMDA3_PF84_1eb65fdf-9643-417f-9974-ad72cae0e10f'
+
+
+connection = mysql.connector.connect(
+    host='localhost',
+    user='root',
+    password='C1sc0123@',
+    database='mise'
+)
+
+# Create a cursor object to interact with the database
+cursor = connection.cursor()
+
+# Execute the SQL query
+query = "SELECT `token` FROM `webex`"
+cursor.execute(query)
+
+# Fetch the result
+result = cursor.fetchone()
+
+# Check if the result exists
+if result:
+    BOT_ACCESS_TOKEN = result[0]  # Extract the token from the result
+    print("BOT_ACCESS_TOKEN:", BOT_ACCESS_TOKEN)
+else:
+    print("No token found in the database")
+
+# Close the cursor and database connection
+cursor.close()
+connection.close()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # Establish a connection to your MySQL database
 connection = mysql.connector.connect(

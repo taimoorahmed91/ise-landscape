@@ -96,7 +96,7 @@ output = (response_post.text)
 print(output)
 
 
-file_path = "/var/www/html/landscape/logging/authorization-logs"
+file_path = "/var/www/html/mise/v0.1/logging/authorization-logs"
 with open(file_path, "a") as file:
     # Append the output to the file
     file.write(time_string + "\n")

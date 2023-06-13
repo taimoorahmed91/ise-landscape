@@ -21,6 +21,24 @@ rm -rf /root/ise-landscape/mise/configs/authorizations/*
 rm -rf /root/ise-landscape/mise/configs/policyset/*
 rm -rf /var/www/html/landscape/deployments/*
 
+
+
+
+rm -rf /var/www/html/mise/v0.1/configs/authz/*
+rm -rf /var/www/html/mise/v0.1/configs/ap/*
+rm -rf /var/www/html/mise/v0.1/configs/authentications/*
+rm -rf /var/www/html/mise/v0.1/configs/authorizations/*
+rm -rf /var/www/html/mise/v0.1/configs/authz/*
+rm -rf /var/www/html/mise/v0.1/configs/conditions/*
+rm -rf /var/www/html/mise/v0.1/configs/dacl/*
+rm -rf /var/www/html/mise/v0.1/configs/nad/*
+rm -rf /var/www/html/mise/v0.1/configs/policyset/*
+rm -rf /var/www/html/mise/v0.1/configs/sgt/*
+rm -rf /root/ise-landscape/mise/configs/authentications/*
+rm -rf /root/ise-landscape/mise/configs/authorizations/*
+rm -rf /root/ise-landscape/mise/configs/policyset/*
+rm -rf /var/www/html/mise/v0.1/deployments/*
+
 # SQL commands
 sql_commands=(
     "DELETE FROM ap;"

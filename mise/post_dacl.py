@@ -18,6 +18,7 @@ connection = mysql.connector.connect(host='127.0.0.1',
 insertid = sys.argv [1]
 fqdn = sys.argv[2]
 daclid = sys.argv[3]
+dacl = sys.argv[4]
 
 
 ### set time parameters
@@ -59,7 +60,7 @@ with open(f'{filename}', 'r', encoding='utf-8') as f:
 
 response_post = requests.request("POST", url, headers=headers, data=final_result, verify=False)
 output = (response_post.text)
-#print(output)
+print(output)
 
 
 file_path = "/var/www/html/mise/v0.1/logging/dacl-logs"
@@ -81,14 +82,30 @@ print(response_post)
 
 
 
-cursor = connection.cursor(dictionary=True)
-sql_update_query = """Update dacl set post_code = %s where id = %s"""
-input_data = (response_post,insertid )
-cursor.execute(sql_update_query, input_data)
-connection.commit()
+#cursor = connection.cursor(dictionary=True)
+#sql_update_query = """Update dacl set post_code = %s where id = %s"""
+#input_data = (response_post,insertid )
+#cursor.execute(sql_update_query, input_data)
+#connection.commit()
 
 #cursor = connection.cursor(dictionary=True)
 #sql_update_query = """Update dacl set queue = 'no' where id = %s"""
 #input_data = (insertid, )
 #cursor.execute(sql_update_query, input_data )
 #connection.commit()
+
+output2 = json.loads(output)
+
+error_message = output2["ERSResponse"]["messages"][0]["title"]
+colons = error_message.split(':')
+extracted_value = ':'.join(colons[-4:])[1:].strip()
+
+print(extracted_value)
+
+
+
+cursor = connection.cursor(dictionary=True)
+sql_insert_query = """INSERT INTO deploymentcode (element, type, action, code, output) VALUES (%s, %s, %s, %s, %s)"""
+input_data = (dacl, 'DACL','POST',response_post,extracted_value)
+cursor.execute(sql_insert_query, input_data)
+connection.commit()

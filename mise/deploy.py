@@ -24,7 +24,7 @@ connection = mysql.connector.connect(host='127.0.0.1',
 
 
 # Process dacl
-query_dacl = "SELECT id, daclid FROM dacl WHERE queue = 'yes'"
+query_dacl = "SELECT id, dacl, daclid FROM dacl WHERE queue = 'yes'"
 # Execute your query and retrieve the results
 cursor = connection.cursor(dictionary=True)
 cursor.execute(query_dacl)
@@ -32,8 +32,9 @@ results = cursor.fetchall()
 
 for row in results:
     id = row['id']
+    dacl = row['dacl']
     daclid = row['daclid']
-    subprocess.run(['sudo', '-S', 'python3', '/root/ise-landscape/mise/post_dacl.py', str(id), fqdn, daclid], check=True)
+    subprocess.run(['sudo', '-S', 'python3', '/root/ise-landscape/mise/post_dacl.py', str(id), fqdn, daclid, dacl], check=True)
 
 # Process authz
 query_authz = "SELECT id, authzid FROM authz WHERE queue = 'yes'"

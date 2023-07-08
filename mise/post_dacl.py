@@ -19,6 +19,8 @@ insertid = sys.argv [1]
 fqdn = sys.argv[2]
 daclid = sys.argv[3]
 dacl = sys.argv[4]
+isename = sys.argv[5]
+
 
 
 ### set time parameters
@@ -78,7 +80,7 @@ with open(file_path, "a") as file:
 response_post = str(response_post)
 response_post = response_post[:-1]
 response_post = response_post[1:]
-print(response_post)
+#print(response_post)
 
 
 
@@ -96,16 +98,18 @@ print(response_post)
 
 output2 = json.loads(output)
 
-error_message = output2["ERSResponse"]["messages"][0]["title"]
-colons = error_message.split(':')
-extracted_value = ':'.join(colons[-4:])[1:].strip()
 
-print(extracted_value)
+error_message = output2["ERSResponse"]["messages"][0]["title"]
+second_last_apostrophe_index = error_message.rfind("'", 0, error_message.rfind("'") - 1)
+extracted_value = error_message[second_last_apostrophe_index + 1:].strip()
+
+#print(extracted_value)
 
 
 
 cursor = connection.cursor(dictionary=True)
-sql_insert_query = """INSERT INTO deploymentcode (element, type, action, code, output) VALUES (%s, %s, %s, %s, %s)"""
-input_data = (dacl, 'DACL','POST',response_post,extracted_value)
+sql_insert_query = """INSERT INTO deploymentcode (element, type, action, code, output, dstise, srcise) VALUES (%s, %s, %s, %s, %s, %s, %s)"""
+input_data = (dacl, 'DACL','POST',response_post,extracted_value,fqdn,isename)
 cursor.execute(sql_insert_query, input_data)
 connection.commit()
+

@@ -13,6 +13,8 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 insertid  = sys.argv[1]
 fqdn  = sys.argv[2]
 authenticationid = sys.argv[3]
+authorize = sys.argv[4]
+isename = sys.argv[5]
 
 connection = mysql.connector.connect(host='127.0.0.1',
                                      database='mise',
@@ -108,12 +110,19 @@ response_post = response_post[1:]
 #print(response_post)
 
 
-cursor = connection.cursor(dictionary=True)
-sql_update_query = """Update authentication set post_code = %s where id = %s"""
-input_data = (response_post,insertid )
-cursor.execute(sql_update_query, input_data)
-connection.commit()
+output2 = json.loads(output)
 
+
+error_message = output2["message"]
+first_colon_index = error_message.index(":")
+extracted_value = error_message[first_colon_index + 1:].strip()
+print(extracted_value)
+
+cursor = connection.cursor(dictionary=True)
+sql_insert_query = """INSERT INTO deploymentcode (element, type, action, code, output, dstise, srcise) VALUES (%s, %s, %s, %s, %s, %s, %s)"""
+input_data = (authorize, 'Authorization','POST',response_post,extracted_value,fqdn,isename)
+cursor.execute(sql_insert_query, input_data)
+connection.commit()
 
 
 

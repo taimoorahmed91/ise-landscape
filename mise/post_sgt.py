@@ -18,7 +18,8 @@ connection = mysql.connector.connect(host='127.0.0.1',
 insertid = sys.argv [1]
 fqdn = sys.argv[2]
 sgtid = sys.argv[3]
-
+sgt = sys.argv[4]
+isename = sys.argv[5]
 
 ### set time parameters
 current_time = datetime.datetime.now()
@@ -77,18 +78,17 @@ with open(file_path, "a") as file:
 response_post = str(response_post)
 response_post = response_post[:-1]
 response_post = response_post[1:]
-print(response_post)
+#print(response_post)
 
 
+output2 = json.loads(output)
+
+error_message = output2["ERSResponse"]["messages"][0]["title"]
+message_parts = error_message.split(".")
+extracted_value = message_parts[-2].strip()
 
 cursor = connection.cursor(dictionary=True)
-sql_update_query = """Update sgt set post_code = %s where id = %s"""
-input_data = (response_post,insertid )
-cursor.execute(sql_update_query, input_data)
+sql_insert_query = """INSERT INTO deploymentcode (element, type, action, code, output, dstise, srcise) VALUES (%s, %s, %s, %s, %s, %s, %s)"""
+input_data = (sgt, 'SGT','POST',response_post,extracted_value,fqdn,isename)
+cursor.execute(sql_insert_query, input_data)
 connection.commit()
-
-#cursor = connection.cursor(dictionary=True)
-#sql_update_query = """Update sgt set queue = 'no' where id = %s"""
-#input_data = (insertid, )
-#cursor.execute(sql_update_query, input_data )
-#connection.commit()

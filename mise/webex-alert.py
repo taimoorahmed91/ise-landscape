@@ -82,7 +82,7 @@ if result:
     MESSAGE_TEXT += "==============================================================\n" 
     MESSAGE_TEXT += "Your deployment has been completed. Here are your results:\n\n"
     MESSAGE_TEXT += f"Deployment Name: {name}\n"
-    MESSAGE_TEXT += f"URL: http://10.48.30.213/landscape/{path}\n"
+    MESSAGE_TEXT += f"URL: http://10.48.30.213/mise/v0.1/{path}\n"
     MESSAGE_TEXT += f"Comments Added: {comments}\n"
     MESSAGE_TEXT += f"Deployment Time: {time}\n\n"
     MESSAGE_TEXT += "This is an auto generated message, please do not reply to it.\n"

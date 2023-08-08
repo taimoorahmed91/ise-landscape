@@ -50,7 +50,7 @@ headers = {
 }
 
 
-filename = "/root/ise-landscape/mise/configs/policyset/" + policysetid
+filename =  "/var/www/html/mise/v0.1/configs/policyset/" + policysetid
 #print(filename)
 
 with open(f'{filename}', 'r', encoding='utf-8') as f:

@@ -80,7 +80,7 @@ newurl = url + "/" + my_id + "/" + authentication
 #print(newurl)
 
 
-filename = "/root/ise-landscape/mise/configs/authentications/" + authenticationid
+filename = "/var/www/html/mise/v0.1/configs/authentications/" + authenticationid
 #print(filename)
 
 
@@ -120,7 +120,7 @@ print(extracted_value)
 
 cursor = connection.cursor(dictionary=True)
 sql_insert_query = """INSERT INTO deploymentcode (element, type, action, code, output, dstise, srcise) VALUES (%s, %s, %s, %s, %s, %s, %s)"""
-input_data = (authorize, 'Authorization','POST',response_post,extracted_value,fqdn,isename)
+input_data = (authorize, 'Authentication','POST',response_post,extracted_value,fqdn,isename)
 cursor.execute(sql_insert_query, input_data)
 connection.commit()
 

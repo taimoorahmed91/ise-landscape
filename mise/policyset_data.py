@@ -67,17 +67,17 @@ for policy_set in policy_sets:
     text_result = response2.text
     json_response2 = response2.json()
     initial_result = json_response2['response']
-    del initial_result['rank']
+    #del initial_result['rank']
     del initial_result['id']
-    final_result = json.dumps(initial_result)
+    final_result = json.dumps(initial_result, indent=4)
     filename = initial_filename + my_id
     filename_web = initial_webfilename + my_id
+    with open(filename_web, "w") as o:
+        with contextlib.redirect_stdout(o):
+            print(final_result)
     with open(filename, "w") as o:
         with contextlib.redirect_stdout(o):
             print(final_result)
-    with open(filename_web, "w") as o:
-        with contextlib.redirect_stdout(o):
-            print(text_result)
     
     response_post = str(response2)[1:-1]
     #print(inheritid)
@@ -97,4 +97,3 @@ delete_query = """
 # Execute delete query
 cursor.execute(delete_query)
 connection.commit()
-

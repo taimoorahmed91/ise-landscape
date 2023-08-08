@@ -80,7 +80,7 @@ newurl = url + "/" + my_id + "/" + authorization
 #print(newurl)
 
 
-filename = "/root/ise-landscape/mise/configs/authorizations/" + authorizationid
+filename = "/var/www/html/mise/v0.1/configs/authorizations/" + authorizationid
 #print(filename)
 
 

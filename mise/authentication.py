@@ -55,9 +55,9 @@ for resource in resources:
     text_result = response2.text
     json_response2 = response2.json()
     initial_result = json_response2['response']
-    del initial_result['rule']['rank']
+    #del initial_result['rule']['rank']
     del initial_result['rule']['id']
-    final_result = json.dumps(initial_result)
+    final_result = json.dumps(initial_result, indent=4)
     filename = initial_filename + my_id
     filename_web = initial_webfilename + my_id
     with open(filename, "w") as o:
@@ -65,7 +65,7 @@ for resource in resources:
             print(final_result)
     with open(filename_web, "w") as o:
         with contextlib.redirect_stdout(o):
-            print(text_result)
+            print(final_result)
     response_post = str(response2)[1:-1]
     insert_values.append((my_name, my_id, policysetname, isename, response_post,href))
 
@@ -83,4 +83,3 @@ delete_query = """
 # Execute delete query
 cursor.execute(delete_query)
 connection.commit()
-

@@ -43,9 +43,9 @@ response2 = requests.get(url, headers=headers, data=payload, verify=False)
 text_result = response2.text
 json_response2 = response2.json()
 initial_result = json_response2['response']
-del initial_result['rule']['rank']
+#del initial_result['rule']['rank']
 del initial_result['rule']['id']
-final_result = json.dumps(initial_result)
+final_result = json.dumps(initial_result, indent=4)
 filename = initial_filename + my_id
 filename_web = initial_webfilename + my_id
 with open(filename, "w") as o:
@@ -53,7 +53,7 @@ with open(filename, "w") as o:
         print(final_result)
 with open(filename_web, "w") as o:
     with contextlib.redirect_stdout(o):
-        print(text_result)
+        print(final_result)
 
 
 
@@ -62,7 +62,7 @@ file_path = "/var/www/html/landscape/logging/authentication-logs"
 with open(file_path, "a") as file:
     # Append the output to the file
     file.write(time_string + "\n")
-    file.write(text_result)
+    file.write(final_result)
 
 response_post = str(response2)
 response_post = response_post[:-1]

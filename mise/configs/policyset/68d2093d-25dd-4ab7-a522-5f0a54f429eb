@@ -1,1 +1,0 @@
-{"default": true, "name": "Default", "description": "Default policy set", "hitCounts": 0, "state": "enabled", "condition": null, "serviceName": "Default Network Access", "isProxy": false, "link": {"rel": "self", "href": "https://172.17.30.91/api/v1/policy/network-access/policy-set/68d2093d-25dd-4ab7-a522-5f0a54f429eb", "type": "application/json"}}

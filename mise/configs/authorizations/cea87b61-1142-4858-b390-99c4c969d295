@@ -3,7 +3,7 @@
         "default": false,
         "name": "Authorization Rule 1",
         "hitCounts": 0,
-        "rank": 1,
+        "rank": 2,
         "state": "enabled",
         "condition": {
             "link": null,

@@ -2,7 +2,7 @@
     "rule": {
         "default": false,
         "name": "Basic_Authenticated_Access",
-        "hitCounts": 90,
+        "hitCounts": 0,
         "rank": 10,
         "state": "enabled",
         "condition": {

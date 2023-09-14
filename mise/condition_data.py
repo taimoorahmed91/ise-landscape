@@ -45,6 +45,7 @@ result = response.text
 
 json_response = response.json()
 resources = json_response['response']
+print(resources)
 
 
 file_path = "/var/www/html/mise/v0.1/logging/condition-logs"
@@ -67,10 +68,14 @@ for resource in resources:
         href = resource['link']['href']        
         response2 = requests.get(srcauthurl, headers=headers, data=payload, verify=False)
         text_result = response2.text
+        json_response2 = response2.json()
+        initial_result = json_response2['response']
+        del initial_result["link"]
+        final_result = json.dumps(initial_result, indent=4)
         filename_web = initial_webfilename + my_id
         with open(filename_web, "w") as o:
             with contextlib.redirect_stdout(o):
-                print(text_result)
+                print(final_result)
 
         response_post = str(response2)
         response_post = response_post[:-1]

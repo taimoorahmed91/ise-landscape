@@ -98,6 +98,24 @@ for row in results:
 
 
 
+
+# Process condition
+query_sgt = "SELECT id, cond, condid, isename FROM cond WHERE queue = 'yes'"
+# Execute your query and retrieve the results
+cursor = connection.cursor(dictionary=True)
+cursor.execute(query_sgt)
+results = cursor.fetchall()
+
+
+for row in results:
+    id = row['id']
+    cond = row['cond']
+    condid = row['condid']
+    isename = row['isename']
+    subprocess.run(['sudo', '-S', 'python3', '/root/ise-landscape/mise/post_cond.py', str(id), fqdn, condid, cond, isename], check=True)
+
+
+
 # Process policyset
 query_policyset = "SELECT id, policyset, policysetid, isename FROM policyset WHERE queue = 'yes'"
 # Execute your query and retrieve the results

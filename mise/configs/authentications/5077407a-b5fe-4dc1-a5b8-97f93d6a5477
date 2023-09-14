@@ -2,8 +2,8 @@
     "rule": {
         "default": false,
         "name": "ASA VPN RADIUS",
-        "hitCounts": 1,
-        "rank": 1,
+        "hitCounts": 0,
+        "rank": 2,
         "state": "enabled",
         "condition": {
             "link": null,

@@ -3,7 +3,7 @@
         "default": true,
         "name": "Default",
         "hitCounts": 0,
-        "rank": 0,
+        "rank": 1,
         "state": "enabled",
         "condition": null
     },

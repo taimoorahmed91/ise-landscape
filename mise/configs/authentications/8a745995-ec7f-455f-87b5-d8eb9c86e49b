@@ -1,9 +1,9 @@
 {
     "rule": {
         "default": false,
-        "name": "Authentication Rule 1",
+        "name": "Authentication Rule 21",
         "hitCounts": 0,
-        "rank": 0,
+        "rank": 1,
         "state": "enabled",
         "condition": {
             "link": null,

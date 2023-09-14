@@ -22,7 +22,7 @@
     "securityGroup": "Employees",
     "link": {
         "rel": "self",
-        "href": "https://172.17.30.2/api/v1/policy/network-access/policy-set/fa6e47a3-fe9f-47e5-a853-df82e93ff1c5/authorization/27170cd1-a64c-41ef-9d29-f0a3641a12b8",
+        "href": "https://172.17.30.2/api/v1/policy/network-access/policy-set/b35c7c59-070e-43ec-b9d3-3ab84bf60e4c/authorization/02791dbd-322c-4cb9-9a87-9858ebade0b4",
         "type": "application/json"
     }
 }

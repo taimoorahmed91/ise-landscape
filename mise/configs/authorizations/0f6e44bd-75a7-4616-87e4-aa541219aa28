@@ -2,7 +2,7 @@
     "rule": {
         "default": false,
         "name": "Authorization Rule 1",
-        "hitCounts": 6,
+        "hitCounts": 0,
         "rank": 0,
         "state": "enabled",
         "condition": {

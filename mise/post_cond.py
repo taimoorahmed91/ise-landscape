@@ -17,9 +17,10 @@ connection = mysql.connector.connect(host='127.0.0.1',
 
 insertid = sys.argv [1]
 fqdn = sys.argv[2]
-authzid = sys.argv[3]
-authz = sys.argv[4]
+condid = sys.argv[3]
+cond = sys.argv[4]
 isename = sys.argv[5]
+
 
 
 ### set time parameters
@@ -32,7 +33,7 @@ time_string = current_time.strftime("%Y-%m-%d %H:%M:%S")
 
 
 firsthalfurl = "https://"
-secondhalfurl = "/ers/config/authorizationprofile"
+secondhalfurl = "/api/v1/policy/network-access/condition"
 
 
 url = firsthalfurl + fqdn + secondhalfurl 
@@ -50,8 +51,7 @@ headers = {
 }
 
 
-
-filename = "/var/www/html/mise/v0.1/configs/authz/" + authzid
+filename = "/var/www/html/mise/v0.1/configs/condition/" + condid
 #print(filename)
 
 with open(f'{filename}', 'r', encoding='utf-8') as f:
@@ -62,10 +62,10 @@ with open(f'{filename}', 'r', encoding='utf-8') as f:
 
 response_post = requests.request("POST", url, headers=headers, data=final_result, verify=False)
 output = (response_post.text)
-#print(output)
+print(output)
 
 
-file_path = "/var/www/html/landscape/logging/authz-logs"
+file_path = "/var/www/html/mise/v0.1/logging/cond-logs"
 with open(file_path, "a") as file:
     # Append the output to the file
     file.write(time_string + "\n")
@@ -82,20 +82,13 @@ response_post = response_post[:-1]
 response_post = response_post[1:]
 #print(response_post)
 
-
-
 output2 = json.loads(output)
 
-error_message = output2["ERSResponse"]["messages"][0]["title"]
-colons = error_message.split(':')
-extracted_value = ':'.join(colons[-4:])[1:].strip()
-
-#print(extracted_value)
-
+extracted_value = output2.get("message", "")  # Get the "message" field, or an empty string if it doesn't exist
 
 
 cursor = connection.cursor(dictionary=True)
 sql_insert_query = """INSERT INTO deploymentcode (element, type, action, code, output, dstise, srcise) VALUES (%s, %s, %s, %s, %s, %s, %s)"""
-input_data = (authz, 'AUTHZ','POST',response_post,extracted_value,fqdn,isename)
+input_data = (cond, 'Condition','POST',response_post,extracted_value,fqdn,isename)
 cursor.execute(sql_insert_query, input_data)
 connection.commit()

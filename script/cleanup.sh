@@ -34,6 +34,7 @@ rm -rf /var/www/html/mise/v0.1/configs/dacl/*
 rm -rf /var/www/html/mise/v0.1/configs/nad/*
 rm -rf /var/www/html/mise/v0.1/configs/policyset/*
 rm -rf /var/www/html/mise/v0.1/configs/sgt/*
+rm -rf /var/www/html/mise/v0.1/configs/condition/*
 rm -rf /root/ise-landscape/mise/configs/authentications/*
 rm -rf /root/ise-landscape/mise/configs/authorizations/*
 rm -rf /root/ise-landscape/mise/configs/policyset/*
@@ -54,6 +55,8 @@ sql_commands=(
     "DELETE FROM deployhistory;"
     "DELETE FROM policysetdeploy;"
     "DELETE FROM patch;"
+    "DELETE FROM cond;"
+    "DELETE FROM deploymentcode;"
     "ALTER TABLE ap AUTO_INCREMENT = 0;"
     "ALTER TABLE authentication AUTO_INCREMENT = 0;"
     "ALTER TABLE authorization AUTO_INCREMENT = 0;"
@@ -67,6 +70,9 @@ sql_commands=(
     "ALTER TABLE deployhistory AUTO_INCREMENT = 0;"
     "ALTER TABLE patch AUTO_INCREMENT = 0;"
     "ALTER TABLE policysetdeploy AUTO_INCREMENT = 0;"
+    "ALTER TABLE cond AUTO_INCREMENT = 0;"
+    "ALTER TABLE deploymentcode AUTO_INCREMENT = 0;"
+
 )
 
 # Run SQL commands

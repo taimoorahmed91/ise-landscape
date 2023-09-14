@@ -2,7 +2,7 @@
     "rule": {
         "default": true,
         "name": "Default",
-        "hitCounts": 112,
+        "hitCounts": 0,
         "rank": 2,
         "state": "enabled",
         "condition": null

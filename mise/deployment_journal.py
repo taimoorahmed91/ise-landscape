@@ -28,6 +28,9 @@ SELECT `sgt` AS `name`, 'sgt' AS `table_name` FROM sgt WHERE `queue` = 'yes'
 UNION ALL
 SELECT `nad` AS `name`, 'nad' AS `table_name` FROM nad WHERE `queue` = 'yes'
 
+UNION ALL
+SELECT `cond` AS `name`, 'cond' AS `table_name` FROM cond WHERE `queue` = 'yes'
+
 
 UNION ALL
 SELECT `policyset` AS `name`, 'policyset' AS `table_name` FROM policyset WHERE `queue` = 'yes'

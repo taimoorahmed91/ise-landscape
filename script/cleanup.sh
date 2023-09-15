@@ -57,6 +57,7 @@ sql_commands=(
     "DELETE FROM patch;"
     "DELETE FROM cond;"
     "DELETE FROM deploymentcode;"
+    "DELETE FROM nodes;"
     "ALTER TABLE ap AUTO_INCREMENT = 0;"
     "ALTER TABLE authentication AUTO_INCREMENT = 0;"
     "ALTER TABLE authorization AUTO_INCREMENT = 0;"
@@ -72,6 +73,7 @@ sql_commands=(
     "ALTER TABLE policysetdeploy AUTO_INCREMENT = 0;"
     "ALTER TABLE cond AUTO_INCREMENT = 0;"
     "ALTER TABLE deploymentcode AUTO_INCREMENT = 0;"
+    "ALTER TABLE nodes AUTO_INCREMENT = 0;"
 
 )
 

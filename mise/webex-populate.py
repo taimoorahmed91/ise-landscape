@@ -114,7 +114,7 @@ rooms = api.rooms.list()
 
 for room in rooms:
     # Check if room.title is equal to "Taimoor Ahmed"
-    #if room.title == "Taimoor Ahmed":
+    if room.title == "Taimoor Ahmed":
         #print(f"Room Name: {room.title}\nRoom ID: {room.id}\n")
         post_data = {'roomId': room.id, 'text': MESSAGE_TEXT}
         response = requests.post(URL, json=post_data, headers=headers)

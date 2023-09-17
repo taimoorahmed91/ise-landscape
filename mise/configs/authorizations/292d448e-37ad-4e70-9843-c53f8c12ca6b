@@ -1,0 +1,28 @@
+{
+    "rule": {
+        "default": false,
+        "name": "Authorization Rule 1",
+        "hitCounts": 0,
+        "rank": 0,
+        "state": "enabled",
+        "condition": {
+            "link": null,
+            "conditionType": "ConditionAttributes",
+            "isNegate": false,
+            "dictionaryName": "ADJoin",
+            "attributeName": "ExternalGroups",
+            "operator": "equals",
+            "dictionaryValue": null,
+            "attributeValue": "taimoorlab.local/Users/networks"
+        }
+    },
+    "profile": [
+        "WSA_Admin"
+    ],
+    "securityGroup": null,
+    "link": {
+        "rel": "self",
+        "href": "https://172.17.30.2/api/v1/policy/network-access/policy-set/6b302e7b-0c90-4c38-b36e-50a894fa5b6d/authorization/292d448e-37ad-4e70-9843-c53f8c12ca6b",
+        "type": "application/json"
+    }
+}

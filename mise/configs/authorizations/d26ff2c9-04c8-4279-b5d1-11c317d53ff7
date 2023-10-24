@@ -1,0 +1,26 @@
+{
+    "rule": {
+        "default": false,
+        "name": "Wi-Fi_Redirect_to_Guest_Login",
+        "hitCounts": 0,
+        "rank": 9,
+        "state": "disabled",
+        "condition": {
+            "link": null,
+            "conditionType": "ConditionReference",
+            "isNegate": false,
+            "name": "Wireless_MAB",
+            "id": "b29a53cc-abf8-4bf2-aab6-53a1fa8b5961",
+            "description": "A condition to match MAC Authentication Bypass service based authentication requests from wireless LAN controllers, according to the corresponding MAB attributes defined in the device profile."
+        }
+    },
+    "profile": [
+        "Cisco_WebAuth"
+    ],
+    "securityGroup": null,
+    "link": {
+        "rel": "self",
+        "href": "https://10.52.13.89/api/v1/policy/network-access/policy-set/c02eba9d-dafb-4ec0-9684-4e13f158ff47/authorization/d26ff2c9-04c8-4279-b5d1-11c317d53ff7",
+        "type": "application/json"
+    }
+}

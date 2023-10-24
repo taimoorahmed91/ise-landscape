@@ -1,0 +1,45 @@
+{
+    "rule": {
+        "default": false,
+        "name": "Authentication Rule 1",
+        "hitCounts": 0,
+        "rank": 0,
+        "state": "enabled",
+        "condition": {
+            "link": null,
+            "conditionType": "ConditionOrBlock",
+            "isNegate": false,
+            "children": [
+                {
+                    "link": null,
+                    "conditionType": "ConditionAttributes",
+                    "isNegate": false,
+                    "dictionaryName": "Radius",
+                    "attributeName": "Called-Station-ID",
+                    "operator": "equals",
+                    "dictionaryValue": null,
+                    "attributeValue": "SSID-1"
+                },
+                {
+                    "link": null,
+                    "conditionType": "ConditionAttributes",
+                    "isNegate": false,
+                    "dictionaryName": "Radius",
+                    "attributeName": "Called-Station-ID",
+                    "operator": "equals",
+                    "dictionaryValue": null,
+                    "attributeValue": "SSID-4"
+                }
+            ]
+        }
+    },
+    "identitySourceName": "ADJoin",
+    "ifAuthFail": "REJECT",
+    "ifUserNotFound": "REJECT",
+    "ifProcessFail": "DROP",
+    "link": {
+        "rel": "self",
+        "href": "https://172.17.30.2/api/v1/policy/network-access/policy-set/6b302e7b-0c90-4c38-b36e-50a894fa5b6d/authentication/989409cc-7abb-4a13-bc59-5877c3e61a71",
+        "type": "application/json"
+    }
+}

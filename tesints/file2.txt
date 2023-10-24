@@ -1,0 +1,14 @@
+{
+  "DownloadableAcl" : {
+    "id" : "4108f500-4fbe-11ed-a871-0050568f5811",
+    "name" : "PERMIT_ALL_IPV6_TRAFFIC_again",
+    "description" : "Allow all ipv6 Traffic_again",
+    "dacl" : "permit ipv6 any any",
+    "daclType" : "IPV6",
+    "link" : {
+      "rel" : "self",
+      "href" : "https://10.52.13.89/ers/config/downloadableacl/4108f500-4fbe-11ed-a871-0050568f5811",
+      "type" : "application/json"
+    }
+  }
+}

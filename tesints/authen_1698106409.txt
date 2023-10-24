@@ -1,0 +1,50 @@
+This is your file result for comparison of authentication in policy set
+
+Authentication Policies in ISE 1:
+Authentication Rule 1
+Authentication Rule 2
+Authentication Rule 3
+Authentication Rule 4
+Authentication Rule 5
+Default
+=================
+Authentication Policies in ISE 2:
+Authentication Rule 1
+Authentication Rule 21
+ASA VPN RADIUS
+Default
+=================
+Differences found:
+Authentication Rule 2
+Authentication Rule 3
+Authentication Rule 4
+Authentication Rule 5
+=================
+Common elements found:
+Authentication Rule 1
+ 246f9545-bbb8-4f6b-96db-9aa8029e63f3
+ cb01935a-77a5-4002-8c43-d38626ca96f0
+=================
+Default
+ 4998a297-8fbb-4ff8-94db-cd9cadc14a4c
+ 9d411596-ce98-49a5-a819-70c860d6f08b
+=================
+
+The JSON files are not identical. Differences:
+Value at 'link.href':
+  First JSON:  https://172.17.30.2/api/v1/policy/network-access/policy-set/b35c7c59-070e-43ec-b9d3-3ab84bf60e4c/authentication/246f9545-bbb8-4f6b-96db-9aa8029e63f3
+  Second JSON: https://172.17.30.2/api/v1/policy/network-access/policy-set/fa6e47a3-fe9f-47e5-a853-df82e93ff1c5/authentication/cb01935a-77a5-4002-8c43-d38626ca96f0
+The JSON files are not identical. Differences:
+Value at 'link.href':
+  First JSON:  https://172.17.30.2/api/v1/policy/network-access/policy-set/b35c7c59-070e-43ec-b9d3-3ab84bf60e4c/authentication/4998a297-8fbb-4ff8-94db-cd9cadc14a4c
+  Second JSON: https://172.17.30.2/api/v1/policy/network-access/policy-set/fa6e47a3-fe9f-47e5-a853-df82e93ff1c5/authentication/9d411596-ce98-49a5-a819-70c860d6f08b
+Value at 'rule.rank':
+  First JSON:  5
+  Second JSON: 3
+Value at 'identitySourceName':
+  First JSON:  All_User_ID_Stores
+  Second JSON: DenyAccess
+Authentication: Authentication Rule 1
+
+Authentication: Default
+

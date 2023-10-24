@@ -1,0 +1,41 @@
+{
+    "rule": {
+        "default": false,
+        "name": "Compliant_Devices_Access",
+        "hitCounts": 0,
+        "rank": 5,
+        "state": "disabled",
+        "condition": {
+            "link": null,
+            "conditionType": "ConditionAndBlock",
+            "isNegate": false,
+            "children": [
+                {
+                    "link": null,
+                    "conditionType": "ConditionReference",
+                    "isNegate": false,
+                    "name": "Network_Access_Authentication_Passed",
+                    "id": "03c42fb9-bcbb-4bda-8e4d-4b8f44e704ce",
+                    "description": "Default condition used for basic Network Access requiring that authentication was successful."
+                },
+                {
+                    "link": null,
+                    "conditionType": "ConditionReference",
+                    "isNegate": false,
+                    "name": "Compliant_Devices",
+                    "id": "f91cab77-236d-4569-9c74-69882c2f10a6",
+                    "description": "Default condition for compliant devices"
+                }
+            ]
+        }
+    },
+    "profile": [
+        "PermitAccess"
+    ],
+    "securityGroup": null,
+    "link": {
+        "rel": "self",
+        "href": "https://10.52.13.89/api/v1/policy/network-access/policy-set/c02eba9d-dafb-4ec0-9684-4e13f158ff47/authorization/83c032f5-87ca-4fc5-8abc-03fd24fccd29",
+        "type": "application/json"
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "rule": {
+        "default": false,
+        "name": "TEst",
+        "hitCounts": 8,
+        "rank": 0,
+        "state": "enabled",
+        "condition": {
+            "link": null,
+            "conditionType": "ConditionAttributes",
+            "isNegate": false,
+            "dictionaryName": "iselab",
+            "attributeName": "ExternalGroups",
+            "operator": "equals",
+            "dictionaryValue": null,
+            "attributeValue": "ciscoise.lab/Builtin/Users"
+        }
+    },
+    "profile": [
+        "PermitAccess"
+    ],
+    "securityGroup": null,
+    "link": {
+        "rel": "self",
+        "href": "https://10.52.13.89/api/v1/policy/network-access/policy-set/7abd4318-82da-420e-8e1a-decb87bc117c/authorization/846cc967-0220-4a2f-8644-5da4c80a2688",
+        "type": "application/json"
+    }
+}

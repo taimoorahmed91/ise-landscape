@@ -1,0 +1,19 @@
+{
+    "rule": {
+        "default": true,
+        "name": "Default",
+        "hitCounts": 0,
+        "rank": 1,
+        "state": "enabled",
+        "condition": null
+    },
+    "identitySourceName": "All_User_ID_Stores",
+    "ifAuthFail": "REJECT",
+    "ifUserNotFound": "REJECT",
+    "ifProcessFail": "DROP",
+    "link": {
+        "rel": "self",
+        "href": "https://10.48.30.75/api/v1/policy/network-access/policy-set/c7dbe4dd-6021-478b-86f7-0f093666bce3/authentication/4ededac8-a5be-4c2f-bd29-d4df139914d2",
+        "type": "application/json"
+    }
+}

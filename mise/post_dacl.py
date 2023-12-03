@@ -82,7 +82,9 @@ response_post = response_post[:-1]
 response_post = response_post[1:]
 #print(response_post)
 
-
+if response_post == "Response [201]":
+    print("Success! Value is Response [201]. Exiting.")
+    exit()
 
 #cursor = connection.cursor(dictionary=True)
 #sql_update_query = """Update dacl set post_code = %s where id = %s"""

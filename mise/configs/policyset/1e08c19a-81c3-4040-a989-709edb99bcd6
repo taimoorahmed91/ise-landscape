@@ -1,0 +1,16 @@
+{
+    "default": true,
+    "name": "Default",
+    "description": "Default policy set",
+    "hitCounts": 0,
+    "rank": 5,
+    "state": "enabled",
+    "condition": null,
+    "serviceName": "Default Network Access",
+    "isProxy": false,
+    "link": {
+        "rel": "self",
+        "href": "https://10.48.30.75/api/v1/policy/network-access/policy-set/1e08c19a-81c3-4040-a989-709edb99bcd6",
+        "type": "application/json"
+    }
+}

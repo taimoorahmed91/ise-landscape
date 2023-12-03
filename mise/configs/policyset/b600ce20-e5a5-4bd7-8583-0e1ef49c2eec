@@ -1,0 +1,25 @@
+{
+    "default": false,
+    "name": "New Policy Set 1",
+    "description": null,
+    "hitCounts": 0,
+    "rank": 0,
+    "state": "enabled",
+    "condition": {
+        "link": null,
+        "conditionType": "ConditionAttributes",
+        "isNegate": false,
+        "dictionaryName": "Radius",
+        "attributeName": "Called-Station-ID",
+        "operator": "equals",
+        "dictionaryValue": null,
+        "attributeValue": "SSID-1"
+    },
+    "serviceName": "Default Network Access",
+    "isProxy": false,
+    "link": {
+        "rel": "self",
+        "href": "https://10.48.30.75/api/v1/policy/network-access/policy-set/b600ce20-e5a5-4bd7-8583-0e1ef49c2eec",
+        "type": "application/json"
+    }
+}

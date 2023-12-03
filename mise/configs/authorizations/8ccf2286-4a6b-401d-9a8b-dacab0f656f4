@@ -1,0 +1,28 @@
+{
+    "rule": {
+        "default": false,
+        "name": "Authorization Rule 2",
+        "hitCounts": 0,
+        "rank": 3,
+        "state": "enabled",
+        "condition": {
+            "link": null,
+            "conditionType": "ConditionAttributes",
+            "isNegate": false,
+            "dictionaryName": "AD",
+            "attributeName": "ExternalGroups",
+            "operator": "equals",
+            "dictionaryValue": null,
+            "attributeValue": "taimoorlab.local/Group Policy/Networks/DC1"
+        }
+    },
+    "profile": [
+        "AuthZ_profile_1"
+    ],
+    "securityGroup": "SGT_Stream1",
+    "link": {
+        "rel": "self",
+        "href": "https://10.48.30.76/api/v1/policy/network-access/policy-set/0563fc32-7b2c-41e3-b948-b2f60ac5987e/authorization/8ccf2286-4a6b-401d-9a8b-dacab0f656f4",
+        "type": "application/json"
+    }
+}

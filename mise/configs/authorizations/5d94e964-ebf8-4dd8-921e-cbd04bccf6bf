@@ -1,0 +1,28 @@
+{
+    "rule": {
+        "default": false,
+        "name": "Authorization Rule 1",
+        "hitCounts": 0,
+        "rank": 0,
+        "state": "enabled",
+        "condition": {
+            "link": null,
+            "conditionType": "ConditionAttributes",
+            "isNegate": false,
+            "dictionaryName": "AD",
+            "attributeName": "ExternalGroups",
+            "operator": "equals",
+            "dictionaryValue": null,
+            "attributeValue": "taimoorlab.local/Group Policy/Networks/DC1"
+        }
+    },
+    "profile": [
+        "PermitAccess"
+    ],
+    "securityGroup": "Auditors",
+    "link": {
+        "rel": "self",
+        "href": "https://10.48.30.75/api/v1/policy/network-access/policy-set/c7dbe4dd-6021-478b-86f7-0f093666bce3/authorization/5d94e964-ebf8-4dd8-921e-cbd04bccf6bf",
+        "type": "application/json"
+    }
+}

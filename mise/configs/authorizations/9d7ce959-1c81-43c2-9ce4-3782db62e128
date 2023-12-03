@@ -1,0 +1,41 @@
+{
+    "rule": {
+        "default": false,
+        "name": "Employee_Onboarding",
+        "hitCounts": 0,
+        "rank": 7,
+        "state": "disabled",
+        "condition": {
+            "link": null,
+            "conditionType": "ConditionAndBlock",
+            "isNegate": false,
+            "children": [
+                {
+                    "link": null,
+                    "conditionType": "ConditionReference",
+                    "isNegate": false,
+                    "name": "Wireless_802.1X",
+                    "id": "02fcecdb-2a65-483e-ae4b-ddb5eedf4fc0",
+                    "description": "A condition to match 802.1X based authentication requests from wireless LAN controllers, according to the corresponding 802.1x attributes defined in the device profile."
+                },
+                {
+                    "link": null,
+                    "conditionType": "ConditionReference",
+                    "isNegate": false,
+                    "name": "EAP-MSCHAPv2",
+                    "id": "820b57a5-d43f-4e33-9220-af33d7dd9be0",
+                    "description": "Default condition for BYOD Onboarding flow"
+                }
+            ]
+        }
+    },
+    "profile": [
+        "NSP_Onboard"
+    ],
+    "securityGroup": "BYOD",
+    "link": {
+        "rel": "self",
+        "href": "https://10.48.30.75/api/v1/policy/network-access/policy-set/1e08c19a-81c3-4040-a989-709edb99bcd6/authorization/9d7ce959-1c81-43c2-9ce4-3782db62e128",
+        "type": "application/json"
+    }
+}

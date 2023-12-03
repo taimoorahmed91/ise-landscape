@@ -1,0 +1,28 @@
+{
+    "rule": {
+        "default": false,
+        "name": "Authentication Rule 1",
+        "hitCounts": 0,
+        "rank": 0,
+        "state": "enabled",
+        "condition": {
+            "link": null,
+            "conditionType": "ConditionAttributes",
+            "isNegate": false,
+            "dictionaryName": "DEVICE",
+            "attributeName": "Device Type",
+            "operator": "equals",
+            "dictionaryValue": null,
+            "attributeValue": "All Device Types"
+        }
+    },
+    "identitySourceName": "AD",
+    "ifAuthFail": "REJECT",
+    "ifUserNotFound": "REJECT",
+    "ifProcessFail": "DROP",
+    "link": {
+        "rel": "self",
+        "href": "https://10.48.30.75/api/v1/policy/network-access/policy-set/c7dbe4dd-6021-478b-86f7-0f093666bce3/authentication/f891499d-d615-4b88-bebf-473d860f44ef",
+        "type": "application/json"
+    }
+}

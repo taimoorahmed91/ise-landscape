@@ -1,0 +1,41 @@
+{
+    "rule": {
+        "default": false,
+        "name": "Unknown_Compliance_Redirect",
+        "hitCounts": 0,
+        "rank": 3,
+        "state": "disabled",
+        "condition": {
+            "link": null,
+            "conditionType": "ConditionAndBlock",
+            "isNegate": false,
+            "children": [
+                {
+                    "link": null,
+                    "conditionType": "ConditionReference",
+                    "isNegate": false,
+                    "name": "Network_Access_Authentication_Passed",
+                    "id": "5cabd4cc-0bf5-488b-aedf-dc7a6840907e",
+                    "description": "Default condition used for basic Network Access requiring that authentication was successful."
+                },
+                {
+                    "link": null,
+                    "conditionType": "ConditionReference",
+                    "isNegate": false,
+                    "name": "Compliance_Unknown_Devices",
+                    "id": "d43b2ff8-0c87-4dc7-a463-b549abf0802f",
+                    "description": "Default condition for unknown compliance devices"
+                }
+            ]
+        }
+    },
+    "profile": [
+        "Cisco_Temporal_Onboard"
+    ],
+    "securityGroup": null,
+    "link": {
+        "rel": "self",
+        "href": "https://10.48.30.75/api/v1/policy/network-access/policy-set/1e08c19a-81c3-4040-a989-709edb99bcd6/authorization/574ee982-71a7-4a02-b8e5-7d16d21207ae",
+        "type": "application/json"
+    }
+}

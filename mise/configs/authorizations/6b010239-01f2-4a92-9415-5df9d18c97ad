@@ -1,0 +1,28 @@
+{
+    "rule": {
+        "default": false,
+        "name": "Profiled Cisco IP Phones",
+        "hitCounts": 0,
+        "rank": 1,
+        "state": "enabled",
+        "condition": {
+            "link": null,
+            "conditionType": "ConditionAttributes",
+            "isNegate": false,
+            "dictionaryName": "IdentityGroup",
+            "attributeName": "Name",
+            "operator": "equals",
+            "dictionaryValue": null,
+            "attributeValue": "Endpoint Identity Groups:Profiled:Cisco-IP-Phone"
+        }
+    },
+    "profile": [
+        "Cisco_IP_Phones"
+    ],
+    "securityGroup": null,
+    "link": {
+        "rel": "self",
+        "href": "https://10.48.30.75/api/v1/policy/network-access/policy-set/1e08c19a-81c3-4040-a989-709edb99bcd6/authorization/6b010239-01f2-4a92-9415-5df9d18c97ad",
+        "type": "application/json"
+    }
+}

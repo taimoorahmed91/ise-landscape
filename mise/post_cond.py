@@ -81,7 +81,9 @@ response_post = str(response_post)
 response_post = response_post[:-1]
 response_post = response_post[1:]
 #print(response_post)
-
+if response_post == "Response [201]":
+    print("Success! Value is Response [201]. Exiting.")
+    exit()
 output2 = json.loads(output)
 
 extracted_value = output2.get("message", "")  # Get the "message" field, or an empty string if it doesn't exist

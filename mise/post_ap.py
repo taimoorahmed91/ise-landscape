@@ -79,8 +79,11 @@ with open(file_path, "a") as file:
 response_post = str(response_post)
 response_post = response_post[:-1]
 response_post = response_post[1:]
-#print(response_post)
+print(response_post)
 
+if response_post == "Response [201]":
+    print("Success! Value is Response [201]. Exiting.")
+    exit()
 
 
 output2 = json.loads(output)

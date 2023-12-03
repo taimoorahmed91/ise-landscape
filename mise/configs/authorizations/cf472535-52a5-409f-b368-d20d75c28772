@@ -1,0 +1,43 @@
+{
+    "rule": {
+        "default": false,
+        "name": "Wireless Block List Default",
+        "hitCounts": 0,
+        "rank": 0,
+        "state": "enabled",
+        "condition": {
+            "link": null,
+            "conditionType": "ConditionAndBlock",
+            "isNegate": false,
+            "children": [
+                {
+                    "link": null,
+                    "conditionType": "ConditionReference",
+                    "isNegate": false,
+                    "name": "Wireless_Access",
+                    "id": "04511cca-6d64-404f-9263-f69ce2ec5cb0",
+                    "description": "Default condition used to match any authentication request from Cisco Wireless LAN Controller."
+                },
+                {
+                    "link": null,
+                    "conditionType": "ConditionAttributes",
+                    "isNegate": false,
+                    "dictionaryName": "IdentityGroup",
+                    "attributeName": "Name",
+                    "operator": "equals",
+                    "dictionaryValue": null,
+                    "attributeValue": "Endpoint Identity Groups:Blocked List"
+                }
+            ]
+        }
+    },
+    "profile": [
+        "Block_Wireless_Access"
+    ],
+    "securityGroup": null,
+    "link": {
+        "rel": "self",
+        "href": "https://10.48.30.75/api/v1/policy/network-access/policy-set/1e08c19a-81c3-4040-a989-709edb99bcd6/authorization/cf472535-52a5-409f-b368-d20d75c28772",
+        "type": "application/json"
+    }
+}

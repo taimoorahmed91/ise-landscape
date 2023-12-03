@@ -1,0 +1,57 @@
+{
+    "rule": {
+        "default": false,
+        "name": "Employee_EAP-TLS",
+        "hitCounts": 0,
+        "rank": 6,
+        "state": "disabled",
+        "condition": {
+            "link": null,
+            "conditionType": "ConditionAndBlock",
+            "isNegate": false,
+            "children": [
+                {
+                    "link": null,
+                    "conditionType": "ConditionReference",
+                    "isNegate": false,
+                    "name": "Wireless_802.1X",
+                    "id": "02fcecdb-2a65-483e-ae4b-ddb5eedf4fc0",
+                    "description": "A condition to match 802.1X based authentication requests from wireless LAN controllers, according to the corresponding 802.1x attributes defined in the device profile."
+                },
+                {
+                    "link": null,
+                    "conditionType": "ConditionReference",
+                    "isNegate": false,
+                    "name": "BYOD_is_Registered",
+                    "id": "719234b2-13ab-40e3-a9fb-76e63541fb87",
+                    "description": "Default condition for BYOD flow for any device that has passed the NSP process"
+                },
+                {
+                    "link": null,
+                    "conditionType": "ConditionReference",
+                    "isNegate": false,
+                    "name": "EAP-TLS",
+                    "id": "76e48923-138c-4fd3-8281-c39a39bd47ca",
+                    "description": "Default condition for BYOD flow for any device that has passed the NSP process"
+                },
+                {
+                    "link": null,
+                    "conditionType": "ConditionReference",
+                    "isNegate": false,
+                    "name": "MAC_in_SAN",
+                    "id": "ec556480-6500-4c24-a9e2-f4f4d4d20839",
+                    "description": "Default condition for BYOD flow for any device that has passed the NSP process"
+                }
+            ]
+        }
+    },
+    "profile": [
+        "PermitAccess"
+    ],
+    "securityGroup": "BYOD",
+    "link": {
+        "rel": "self",
+        "href": "https://10.48.30.75/api/v1/policy/network-access/policy-set/1e08c19a-81c3-4040-a989-709edb99bcd6/authorization/fbeca4c1-cc31-4164-b10d-8adca8b242e1",
+        "type": "application/json"
+    }
+}

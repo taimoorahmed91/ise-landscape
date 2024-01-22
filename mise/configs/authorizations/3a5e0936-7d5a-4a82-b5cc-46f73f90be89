@@ -1,0 +1,26 @@
+{
+    "rule": {
+        "default": false,
+        "name": "Basic_Authenticated_Access",
+        "hitCounts": 0,
+        "rank": 10,
+        "state": "enabled",
+        "condition": {
+            "link": null,
+            "conditionType": "ConditionReference",
+            "isNegate": false,
+            "name": "Network_Access_Authentication_Passed",
+            "id": "0509f050-3fd9-42f8-a952-2ab585d3532d",
+            "description": "Default condition used for basic Network Access requiring that authentication was successful."
+        }
+    },
+    "profile": [
+        "PermitAccess"
+    ],
+    "securityGroup": null,
+    "link": {
+        "rel": "self",
+        "href": "https://10.48.30.79/api/v1/policy/network-access/policy-set/b3976fa4-e294-4461-8d09-c7aebf86d47e/authorization/3a5e0936-7d5a-4a82-b5cc-46f73f90be89",
+        "type": "application/json"
+    }
+}

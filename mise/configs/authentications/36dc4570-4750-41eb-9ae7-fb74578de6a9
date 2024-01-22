@@ -1,0 +1,41 @@
+{
+    "rule": {
+        "default": false,
+        "name": "MAB",
+        "hitCounts": 0,
+        "rank": 0,
+        "state": "enabled",
+        "condition": {
+            "link": null,
+            "conditionType": "ConditionOrBlock",
+            "isNegate": false,
+            "children": [
+                {
+                    "link": null,
+                    "conditionType": "ConditionReference",
+                    "isNegate": false,
+                    "name": "Wired_MAB",
+                    "id": "5bc5a76d-d38b-4916-bc45-e7a9db71d7d6",
+                    "description": "A condition to match MAC Authentication Bypass service based authentication requests from switches, according to the corresponding MAB attributes defined in the device profile."
+                },
+                {
+                    "link": null,
+                    "conditionType": "ConditionReference",
+                    "isNegate": false,
+                    "name": "Wireless_MAB",
+                    "id": "e038298a-a0ab-4297-94ed-3ede1647b948",
+                    "description": "A condition to match MAC Authentication Bypass service based authentication requests from wireless LAN controllers, according to the corresponding MAB attributes defined in the device profile."
+                }
+            ]
+        }
+    },
+    "identitySourceName": "Internal Endpoints",
+    "ifAuthFail": "REJECT",
+    "ifUserNotFound": "CONTINUE",
+    "ifProcessFail": "DROP",
+    "link": {
+        "rel": "self",
+        "href": "https://10.48.30.79/api/v1/policy/network-access/policy-set/b3976fa4-e294-4461-8d09-c7aebf86d47e/authentication/36dc4570-4750-41eb-9ae7-fb74578de6a9",
+        "type": "application/json"
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "rule": {
+        "default": false,
+        "name": "Profiled Non Cisco IP Phones",
+        "hitCounts": 0,
+        "rank": 2,
+        "state": "enabled",
+        "condition": {
+            "link": null,
+            "conditionType": "ConditionReference",
+            "isNegate": false,
+            "name": "Non_Cisco_Profiled_Phones",
+            "id": "f7409136-1898-4eb6-be52-c0c32a41acc5",
+            "description": "Default condition used to match Non Cisco IP Phones"
+        }
+    },
+    "profile": [
+        "Non_Cisco_IP_Phones"
+    ],
+    "securityGroup": null,
+    "link": {
+        "rel": "self",
+        "href": "https://10.48.30.78/api/v1/policy/network-access/policy-set/f28bc33f-8148-4221-b871-c008e8bf66f4/authorization/eb7988a7-a9c2-4948-9683-3b5fb7ec7b77",
+        "type": "application/json"
+    }
+}

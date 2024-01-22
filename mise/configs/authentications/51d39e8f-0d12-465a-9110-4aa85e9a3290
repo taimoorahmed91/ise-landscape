@@ -1,0 +1,41 @@
+{
+    "rule": {
+        "default": false,
+        "name": "Dot1X",
+        "hitCounts": 0,
+        "rank": 1,
+        "state": "enabled",
+        "condition": {
+            "link": null,
+            "conditionType": "ConditionOrBlock",
+            "isNegate": false,
+            "children": [
+                {
+                    "link": null,
+                    "conditionType": "ConditionReference",
+                    "isNegate": false,
+                    "name": "Wired_802.1X",
+                    "id": "a2e23ece-8cac-472b-a456-dd20e16d4dbe",
+                    "description": "A condition to match 802.1X based authentication requests from switches, according to the corresponding 802.1x attributes defined in the device profile."
+                },
+                {
+                    "link": null,
+                    "conditionType": "ConditionReference",
+                    "isNegate": false,
+                    "name": "Wireless_802.1X",
+                    "id": "6bba6c8a-8d22-4359-af2f-816ddac2e2ac",
+                    "description": "A condition to match 802.1X based authentication requests from wireless LAN controllers, according to the corresponding 802.1x attributes defined in the device profile."
+                }
+            ]
+        }
+    },
+    "identitySourceName": "All_User_ID_Stores",
+    "ifAuthFail": "REJECT",
+    "ifUserNotFound": "REJECT",
+    "ifProcessFail": "DROP",
+    "link": {
+        "rel": "self",
+        "href": "https://10.48.30.78/api/v1/policy/network-access/policy-set/f28bc33f-8148-4221-b871-c008e8bf66f4/authentication/51d39e8f-0d12-465a-9110-4aa85e9a3290",
+        "type": "application/json"
+    }
+}

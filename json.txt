@@ -1,0 +1,517 @@
+{
+    "SearchResult": {
+        "total": 51,
+        "resources": [
+            {
+                "id": "92919850-8c01-11e6-996c-525400b48521",
+                "name": "Deny IP",
+                "description": "Deny IP SGACL",
+                "link": {
+                    "rel": "self",
+                    "href": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/92919850-8c01-11e6-996c-525400b48521",
+                    "type": "application/json"
+                }
+            },
+            {
+                "id": "9e15c860-4fc6-11ed-a871-0050568f5811",
+                "name": "Deny_IP_Log",
+                "description": "Deny IP with logging",
+                "link": {
+                    "rel": "self",
+                    "href": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/9e15c860-4fc6-11ed-a871-0050568f5811",
+                    "type": "application/json"
+                }
+            },
+            {
+                "id": "92951ac0-8c01-11e6-996c-525400b48521",
+                "name": "Permit IP",
+                "description": "Permit IP SGACL",
+                "link": {
+                    "rel": "self",
+                    "href": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/92951ac0-8c01-11e6-996c-525400b48521",
+                    "type": "application/json"
+                }
+            },
+            {
+                "id": "9e126d00-4fc6-11ed-a871-0050568f5811",
+                "name": "Permit_IP_Log",
+                "description": "Permit IP with logging",
+                "link": {
+                    "rel": "self",
+                    "href": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/9e126d00-4fc6-11ed-a871-0050568f5811",
+                    "type": "application/json"
+                }
+            },
+            {
+                "id": "4358b550-ab04-11ee-ad08-7e2a0d928e99",
+                "name": "SGACL_from_Common_Traffic",
+                "description": "",
+                "link": {
+                    "rel": "self",
+                    "href": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/4358b550-ab04-11ee-ad08-7e2a0d928e99",
+                    "type": "application/json"
+                }
+            },
+            {
+                "id": "991d8750-b332-11ee-ad08-7e2a0d928e99",
+                "name": "SGACL_from_ElasticSearch",
+                "description": "",
+                "link": {
+                    "rel": "self",
+                    "href": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/991d8750-b332-11ee-ad08-7e2a0d928e99",
+                    "type": "application/json"
+                }
+            },
+            {
+                "id": "075a6300-ab0e-11ee-ad08-7e2a0d928e99",
+                "name": "SGACL_from_Evoko_Servers",
+                "description": "",
+                "link": {
+                    "rel": "self",
+                    "href": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/075a6300-ab0e-11ee-ad08-7e2a0d928e99",
+                    "type": "application/json"
+                }
+            },
+            {
+                "id": "1b8aff10-ab0e-11ee-ad08-7e2a0d928e99",
+                "name": "SGACL_from_HP_Printer",
+                "description": "",
+                "link": {
+                    "rel": "self",
+                    "href": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/1b8aff10-ab0e-11ee-ad08-7e2a0d928e99",
+                    "type": "application/json"
+                }
+            },
+            {
+                "id": "9d14ba90-ab0d-11ee-ad08-7e2a0d928e99",
+                "name": "SGACL_from_HTTPS",
+                "description": "",
+                "link": {
+                    "rel": "self",
+                    "href": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/9d14ba90-ab0d-11ee-ad08-7e2a0d928e99",
+                    "type": "application/json"
+                }
+            },
+            {
+                "id": "7894d900-b168-11ee-ad08-7e2a0d928e99",
+                "name": "SGACL_from_LDAP",
+                "description": "",
+                "link": {
+                    "rel": "self",
+                    "href": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/7894d900-b168-11ee-ad08-7e2a0d928e99",
+                    "type": "application/json"
+                }
+            },
+            {
+                "id": "341d0400-ab0f-11ee-ad08-7e2a0d928e99",
+                "name": "SGACL_from_MGMT_Protocols",
+                "description": "",
+                "link": {
+                    "rel": "self",
+                    "href": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/341d0400-ab0f-11ee-ad08-7e2a0d928e99",
+                    "type": "application/json"
+                }
+            },
+            {
+                "id": "ff802930-b332-11ee-ad08-7e2a0d928e99",
+                "name": "SGACL_from_MsExchange",
+                "description": "",
+                "link": {
+                    "rel": "self",
+                    "href": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/ff802930-b332-11ee-ad08-7e2a0d928e99",
+                    "type": "application/json"
+                }
+            },
+            {
+                "id": "9fdbaa80-9f1f-11ee-ad08-7e2a0d928e99",
+                "name": "SGACL_from_MsTeams",
+                "description": "",
+                "link": {
+                    "rel": "self",
+                    "href": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/9fdbaa80-9f1f-11ee-ad08-7e2a0d928e99",
+                    "type": "application/json"
+                }
+            },
+            {
+                "id": "7fa63600-b332-11ee-ad08-7e2a0d928e99",
+                "name": "SGACL_from_NTP",
+                "description": "",
+                "link": {
+                    "rel": "self",
+                    "href": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/7fa63600-b332-11ee-ad08-7e2a0d928e99",
+                    "type": "application/json"
+                }
+            },
+            {
+                "id": "994230e0-b333-11ee-ad08-7e2a0d928e99",
+                "name": "SGACL_from_QSC_AV",
+                "description": "",
+                "link": {
+                    "rel": "self",
+                    "href": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/994230e0-b333-11ee-ad08-7e2a0d928e99",
+                    "type": "application/json"
+                }
+            },
+            {
+                "id": "bf0899e0-b333-11ee-ad08-7e2a0d928e99",
+                "name": "SGACL_from_SBC_AC_Telco",
+                "description": "",
+                "link": {
+                    "rel": "self",
+                    "href": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/bf0899e0-b333-11ee-ad08-7e2a0d928e99",
+                    "type": "application/json"
+                }
+            },
+            {
+                "id": "3da78d50-b33a-11ee-ad08-7e2a0d928e99",
+                "name": "SGACL_from_SBC_Cloud",
+                "description": "",
+                "link": {
+                    "rel": "self",
+                    "href": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/3da78d50-b33a-11ee-ad08-7e2a0d928e99",
+                    "type": "application/json"
+                }
+            },
+            {
+                "id": "874c7da0-ab04-11ee-ad08-7e2a0d928e99",
+                "name": "SGACL_from_Shared_Srv",
+                "description": "",
+                "link": {
+                    "rel": "self",
+                    "href": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/874c7da0-ab04-11ee-ad08-7e2a0d928e99",
+                    "type": "application/json"
+                }
+            },
+            {
+                "id": "c45d4e50-b332-11ee-ad08-7e2a0d928e99",
+                "name": "SGACL_from_TCP_2112",
+                "description": "",
+                "link": {
+                    "rel": "self",
+                    "href": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/c45d4e50-b332-11ee-ad08-7e2a0d928e99",
+                    "type": "application/json"
+                }
+            },
+            {
+                "id": "e00e8a10-b332-11ee-ad08-7e2a0d928e99",
+                "name": "SGACL_from_TCP_3002",
+                "description": "",
+                "link": {
+                    "rel": "self",
+                    "href": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/e00e8a10-b332-11ee-ad08-7e2a0d928e99",
+                    "type": "application/json"
+                }
+            },
+            {
+                "id": "7c37b140-b334-11ee-ad08-7e2a0d928e99",
+                "name": "SGACL_from_TCP_5000",
+                "description": "",
+                "link": {
+                    "rel": "self",
+                    "href": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/7c37b140-b334-11ee-ad08-7e2a0d928e99",
+                    "type": "application/json"
+                }
+            },
+            {
+                "id": "a938e940-b332-11ee-ad08-7e2a0d928e99",
+                "name": "SGACL_from_TCP_8883",
+                "description": "",
+                "link": {
+                    "rel": "self",
+                    "href": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/a938e940-b332-11ee-ad08-7e2a0d928e99",
+                    "type": "application/json"
+                }
+            },
+            {
+                "id": "a747f940-b333-11ee-ad08-7e2a0d928e99",
+                "name": "SGACL_from_TeamsSkype_Rooms",
+                "description": "",
+                "link": {
+                    "rel": "self",
+                    "href": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/a747f940-b333-11ee-ad08-7e2a0d928e99",
+                    "type": "application/json"
+                }
+            },
+            {
+                "id": "2cbecd70-b333-11ee-ad08-7e2a0d928e99",
+                "name": "SGACL_from_VS_TOP",
+                "description": "",
+                "link": {
+                    "rel": "self",
+                    "href": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/2cbecd70-b333-11ee-ad08-7e2a0d928e99",
+                    "type": "application/json"
+                }
+            },
+            {
+                "id": "b0dbe890-b333-11ee-ad08-7e2a0d928e99",
+                "name": "SGACL_from_ZoomRoom",
+                "description": "",
+                "link": {
+                    "rel": "self",
+                    "href": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/b0dbe890-b333-11ee-ad08-7e2a0d928e99",
+                    "type": "application/json"
+                }
+            },
+            {
+                "id": "b43fdff0-b6a8-11ee-ad08-7e2a0d928e99",
+                "name": "SGACL_HTTPS",
+                "description": "",
+                "link": {
+                    "rel": "self",
+                    "href": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/b43fdff0-b6a8-11ee-ad08-7e2a0d928e99",
+                    "type": "application/json"
+                }
+            },
+            {
+                "id": "29111240-b334-11ee-ad08-7e2a0d928e99",
+                "name": "SGACL_OVOC_Server",
+                "description": "",
+                "link": {
+                    "rel": "self",
+                    "href": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/29111240-b334-11ee-ad08-7e2a0d928e99",
+                    "type": "application/json"
+                }
+            },
+            {
+                "id": "db7aca20-b5f0-11ee-ad08-7e2a0d928e99",
+                "name": "SGACL_permit_ICMP",
+                "description": "",
+                "link": {
+                    "rel": "self",
+                    "href": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/db7aca20-b5f0-11ee-ad08-7e2a0d928e99",
+                    "type": "application/json"
+                }
+            },
+            {
+                "id": "a42a4420-955b-11ee-8b0b-2616239c0237",
+                "name": "SGACL_Permit_IP",
+                "description": "",
+                "link": {
+                    "rel": "self",
+                    "href": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/a42a4420-955b-11ee-8b0b-2616239c0237",
+                    "type": "application/json"
+                }
+            },
+            {
+                "id": "9f0a7ba0-ab03-11ee-ad08-7e2a0d928e99",
+                "name": "SGACL_Permit_TCP",
+                "description": "",
+                "link": {
+                    "rel": "self",
+                    "href": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/9f0a7ba0-ab03-11ee-ad08-7e2a0d928e99",
+                    "type": "application/json"
+                }
+            },
+            {
+                "id": "265a8730-ab04-11ee-ad08-7e2a0d928e99",
+                "name": "SGACL_to_Common_Traffic",
+                "description": "",
+                "link": {
+                    "rel": "self",
+                    "href": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/265a8730-ab04-11ee-ad08-7e2a0d928e99",
+                    "type": "application/json"
+                }
+            },
+            {
+                "id": "6ac4fcb0-b334-11ee-ad08-7e2a0d928e99",
+                "name": "SGACL_to_ElasticSearch",
+                "description": "",
+                "link": {
+                    "rel": "self",
+                    "href": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/6ac4fcb0-b334-11ee-ad08-7e2a0d928e99",
+                    "type": "application/json"
+                }
+            },
+            {
+                "id": "fd0ff4f0-ab0d-11ee-ad08-7e2a0d928e99",
+                "name": "SGACL_to_Evoko_Servers",
+                "description": "",
+                "link": {
+                    "rel": "self",
+                    "href": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/fd0ff4f0-ab0d-11ee-ad08-7e2a0d928e99",
+                    "type": "application/json"
+                }
+            },
+            {
+                "id": "266d1940-ab0e-11ee-ad08-7e2a0d928e99",
+                "name": "SGACL_to_HP_Printer",
+                "description": "",
+                "link": {
+                    "rel": "self",
+                    "href": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/266d1940-ab0e-11ee-ad08-7e2a0d928e99",
+                    "type": "application/json"
+                }
+            },
+            {
+                "id": "911fd0d0-ab0d-11ee-ad08-7e2a0d928e99",
+                "name": "SGACL_to_HTTPS",
+                "description": "",
+                "link": {
+                    "rel": "self",
+                    "href": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/911fd0d0-ab0d-11ee-ad08-7e2a0d928e99",
+                    "type": "application/json"
+                }
+            },
+            {
+                "id": "6ac72420-3212-11ee-a1d3-4ac52a6dce17",
+                "name": "SGACL_to_LDAP",
+                "description": "",
+                "link": {
+                    "rel": "self",
+                    "href": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/6ac72420-3212-11ee-a1d3-4ac52a6dce17",
+                    "type": "application/json"
+                }
+            },
+            {
+                "id": "26084780-ab0f-11ee-ad08-7e2a0d928e99",
+                "name": "SGACL_to_MGMT_Protocols",
+                "description": "",
+                "link": {
+                    "rel": "self",
+                    "href": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/26084780-ab0f-11ee-ad08-7e2a0d928e99",
+                    "type": "application/json"
+                }
+            },
+            {
+                "id": "0867b670-b334-11ee-ad08-7e2a0d928e99",
+                "name": "SGACL_to_MsExchange",
+                "description": "",
+                "link": {
+                    "rel": "self",
+                    "href": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/0867b670-b334-11ee-ad08-7e2a0d928e99",
+                    "type": "application/json"
+                }
+            },
+            {
+                "id": "66584ed0-9f1f-11ee-ad08-7e2a0d928e99",
+                "name": "SGACL_to_MsTeams",
+                "description": "",
+                "link": {
+                    "rel": "self",
+                    "href": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/66584ed0-9f1f-11ee-ad08-7e2a0d928e99",
+                    "type": "application/json"
+                }
+            },
+            {
+                "id": "542a1760-b334-11ee-ad08-7e2a0d928e99",
+                "name": "SGACL_to_NTP",
+                "description": "",
+                "link": {
+                    "rel": "self",
+                    "href": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/542a1760-b334-11ee-ad08-7e2a0d928e99",
+                    "type": "application/json"
+                }
+            },
+            {
+                "id": "8f7493f0-b333-11ee-ad08-7e2a0d928e99",
+                "name": "SGACL_to_QSC_AV",
+                "description": "",
+                "link": {
+                    "rel": "self",
+                    "href": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/8f7493f0-b333-11ee-ad08-7e2a0d928e99",
+                    "type": "application/json"
+                }
+            },
+            {
+                "id": "61630f50-b333-11ee-ad08-7e2a0d928e99",
+                "name": "SGACL_to_SBC_AC_Telco",
+                "description": "",
+                "link": {
+                    "rel": "self",
+                    "href": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/61630f50-b333-11ee-ad08-7e2a0d928e99",
+                    "type": "application/json"
+                }
+            },
+            {
+                "id": "33b50340-b33a-11ee-ad08-7e2a0d928e99",
+                "name": "SGACL_to_SBC_Cloud",
+                "description": "",
+                "link": {
+                    "rel": "self",
+                    "href": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/33b50340-b33a-11ee-ad08-7e2a0d928e99",
+                    "type": "application/json"
+                }
+            },
+            {
+                "id": "57cd8650-ab04-11ee-ad08-7e2a0d928e99",
+                "name": "SGACL_to_Shared_Srv",
+                "description": "",
+                "link": {
+                    "rel": "self",
+                    "href": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/57cd8650-ab04-11ee-ad08-7e2a0d928e99",
+                    "type": "application/json"
+                }
+            },
+            {
+                "id": "852b9000-b334-11ee-ad08-7e2a0d928e99",
+                "name": "SGACL_to_TCP_2112",
+                "description": "",
+                "link": {
+                    "rel": "self",
+                    "href": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/852b9000-b334-11ee-ad08-7e2a0d928e99",
+                    "type": "application/json"
+                }
+            },
+            {
+                "id": "91a7d230-b334-11ee-ad08-7e2a0d928e99",
+                "name": "SGACL_to_TCP_3002",
+                "description": "",
+                "link": {
+                    "rel": "self",
+                    "href": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/91a7d230-b334-11ee-ad08-7e2a0d928e99",
+                    "type": "application/json"
+                }
+            },
+            {
+                "id": "b5a61040-b332-11ee-ad08-7e2a0d928e99",
+                "name": "SGACL_to_TCP_5000",
+                "description": "",
+                "link": {
+                    "rel": "self",
+                    "href": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/b5a61040-b332-11ee-ad08-7e2a0d928e99",
+                    "type": "application/json"
+                }
+            },
+            {
+                "id": "7355acd0-b334-11ee-ad08-7e2a0d928e99",
+                "name": "SGACL_to_TCP_8883",
+                "description": "",
+                "link": {
+                    "rel": "self",
+                    "href": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/7355acd0-b334-11ee-ad08-7e2a0d928e99",
+                    "type": "application/json"
+                }
+            },
+            {
+                "id": "8222d950-b333-11ee-ad08-7e2a0d928e99",
+                "name": "SGACL_to_TeamsSkype_Rooms",
+                "description": "",
+                "link": {
+                    "rel": "self",
+                    "href": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/8222d950-b333-11ee-ad08-7e2a0d928e99",
+                    "type": "application/json"
+                }
+            },
+            {
+                "id": "ef0c9fb0-b333-11ee-ad08-7e2a0d928e99",
+                "name": "SGACL_to_VS_TOP",
+                "description": "",
+                "link": {
+                    "rel": "self",
+                    "href": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/ef0c9fb0-b333-11ee-ad08-7e2a0d928e99",
+                    "type": "application/json"
+                }
+            },
+            {
+                "id": "6e009520-b333-11ee-ad08-7e2a0d928e99",
+                "name": "SGACL_to_ZoomRoom",
+                "description": "",
+                "link": {
+                    "rel": "self",
+                    "href": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/6e009520-b333-11ee-ad08-7e2a0d928e99",
+                    "type": "application/json"
+                }
+            }
+        ]
+    }
+}

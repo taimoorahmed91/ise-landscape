@@ -1,0 +1,41 @@
+{
+    "rule": {
+        "default": false,
+        "name": "Wi-Fi_Guest_Access",
+        "hitCounts": 0,
+        "rank": 8,
+        "state": "disabled",
+        "condition": {
+            "link": null,
+            "conditionType": "ConditionAndBlock",
+            "isNegate": false,
+            "children": [
+                {
+                    "link": null,
+                    "conditionType": "ConditionReference",
+                    "isNegate": false,
+                    "name": "Guest_Flow",
+                    "id": "8eadfbc0-de38-42c4-81f7-a36d0afe4903",
+                    "description": "Default condition for guest flow"
+                },
+                {
+                    "link": null,
+                    "conditionType": "ConditionReference",
+                    "isNegate": false,
+                    "name": "Wireless_MAB",
+                    "id": "c2f1c271-9fb8-4c75-a074-33e2a5718962",
+                    "description": "A condition to match MAC Authentication Bypass service based authentication requests from wireless LAN controllers, according to the corresponding MAB attributes defined in the device profile."
+                }
+            ]
+        }
+    },
+    "profile": [
+        "PermitAccess"
+    ],
+    "securityGroup": "Guests",
+    "link": {
+        "rel": "self",
+        "href": "https://10.48.30.78/api/v1/policy/network-access/policy-set/f28bc33f-8148-4221-b871-c008e8bf66f4/authorization/f205d8eb-cb24-4110-81eb-5520e80b0853",
+        "type": "application/json"
+    }
+}

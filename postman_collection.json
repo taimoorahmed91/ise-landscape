@@ -1,0 +1,1897 @@
+{
+    "info": {
+        "name": "Collection from HREFs",
+        "description": "Generated from outputs.txt",
+        "_postman_id": "generated-id",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Request 1",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Accept",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Authorization",
+                        "value": "Basic YXBpdXNlcjpLNGY4"
+                    }
+                ],
+                "url": {
+                    "raw": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/92919850-8c01-11e6-996c-525400b48521",
+                    "protocol": "https",
+                    "host": [
+                        "wdf90-ise-01",
+                        "net",
+                        "sap",
+                        "corp"
+                    ],
+                    "path": [
+                        "ers",
+                        "config",
+                        "sgacl",
+                        "92919850-8c01-11e6-996c-525400b48521"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Request 2",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Accept",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Authorization",
+                        "value": "Basic YXBpdXNlcjpLNGY4"
+                    }
+                ],
+                "url": {
+                    "raw": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/9e15c860-4fc6-11ed-a871-0050568f5811",
+                    "protocol": "https",
+                    "host": [
+                        "wdf90-ise-01",
+                        "net",
+                        "sap",
+                        "corp"
+                    ],
+                    "path": [
+                        "ers",
+                        "config",
+                        "sgacl",
+                        "9e15c860-4fc6-11ed-a871-0050568f5811"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Request 3",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Accept",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Authorization",
+                        "value": "Basic YXBpdXNlcjpLNGY4"
+                    }
+                ],
+                "url": {
+                    "raw": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/92951ac0-8c01-11e6-996c-525400b48521",
+                    "protocol": "https",
+                    "host": [
+                        "wdf90-ise-01",
+                        "net",
+                        "sap",
+                        "corp"
+                    ],
+                    "path": [
+                        "ers",
+                        "config",
+                        "sgacl",
+                        "92951ac0-8c01-11e6-996c-525400b48521"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Request 4",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Accept",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Authorization",
+                        "value": "Basic YXBpdXNlcjpLNGY4"
+                    }
+                ],
+                "url": {
+                    "raw": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/9e126d00-4fc6-11ed-a871-0050568f5811",
+                    "protocol": "https",
+                    "host": [
+                        "wdf90-ise-01",
+                        "net",
+                        "sap",
+                        "corp"
+                    ],
+                    "path": [
+                        "ers",
+                        "config",
+                        "sgacl",
+                        "9e126d00-4fc6-11ed-a871-0050568f5811"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Request 5",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Accept",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Authorization",
+                        "value": "Basic YXBpdXNlcjpLNGY4"
+                    }
+                ],
+                "url": {
+                    "raw": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/4358b550-ab04-11ee-ad08-7e2a0d928e99",
+                    "protocol": "https",
+                    "host": [
+                        "wdf90-ise-01",
+                        "net",
+                        "sap",
+                        "corp"
+                    ],
+                    "path": [
+                        "ers",
+                        "config",
+                        "sgacl",
+                        "4358b550-ab04-11ee-ad08-7e2a0d928e99"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Request 6",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Accept",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Authorization",
+                        "value": "Basic YXBpdXNlcjpLNGY4"
+                    }
+                ],
+                "url": {
+                    "raw": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/991d8750-b332-11ee-ad08-7e2a0d928e99",
+                    "protocol": "https",
+                    "host": [
+                        "wdf90-ise-01",
+                        "net",
+                        "sap",
+                        "corp"
+                    ],
+                    "path": [
+                        "ers",
+                        "config",
+                        "sgacl",
+                        "991d8750-b332-11ee-ad08-7e2a0d928e99"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Request 7",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Accept",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Authorization",
+                        "value": "Basic YXBpdXNlcjpLNGY4"
+                    }
+                ],
+                "url": {
+                    "raw": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/075a6300-ab0e-11ee-ad08-7e2a0d928e99",
+                    "protocol": "https",
+                    "host": [
+                        "wdf90-ise-01",
+                        "net",
+                        "sap",
+                        "corp"
+                    ],
+                    "path": [
+                        "ers",
+                        "config",
+                        "sgacl",
+                        "075a6300-ab0e-11ee-ad08-7e2a0d928e99"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Request 8",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Accept",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Authorization",
+                        "value": "Basic YXBpdXNlcjpLNGY4"
+                    }
+                ],
+                "url": {
+                    "raw": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/1b8aff10-ab0e-11ee-ad08-7e2a0d928e99",
+                    "protocol": "https",
+                    "host": [
+                        "wdf90-ise-01",
+                        "net",
+                        "sap",
+                        "corp"
+                    ],
+                    "path": [
+                        "ers",
+                        "config",
+                        "sgacl",
+                        "1b8aff10-ab0e-11ee-ad08-7e2a0d928e99"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Request 9",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Accept",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Authorization",
+                        "value": "Basic YXBpdXNlcjpLNGY4"
+                    }
+                ],
+                "url": {
+                    "raw": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/9d14ba90-ab0d-11ee-ad08-7e2a0d928e99",
+                    "protocol": "https",
+                    "host": [
+                        "wdf90-ise-01",
+                        "net",
+                        "sap",
+                        "corp"
+                    ],
+                    "path": [
+                        "ers",
+                        "config",
+                        "sgacl",
+                        "9d14ba90-ab0d-11ee-ad08-7e2a0d928e99"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Request 10",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Accept",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Authorization",
+                        "value": "Basic YXBpdXNlcjpLNGY4"
+                    }
+                ],
+                "url": {
+                    "raw": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/7894d900-b168-11ee-ad08-7e2a0d928e99",
+                    "protocol": "https",
+                    "host": [
+                        "wdf90-ise-01",
+                        "net",
+                        "sap",
+                        "corp"
+                    ],
+                    "path": [
+                        "ers",
+                        "config",
+                        "sgacl",
+                        "7894d900-b168-11ee-ad08-7e2a0d928e99"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Request 11",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Accept",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Authorization",
+                        "value": "Basic YXBpdXNlcjpLNGY4"
+                    }
+                ],
+                "url": {
+                    "raw": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/341d0400-ab0f-11ee-ad08-7e2a0d928e99",
+                    "protocol": "https",
+                    "host": [
+                        "wdf90-ise-01",
+                        "net",
+                        "sap",
+                        "corp"
+                    ],
+                    "path": [
+                        "ers",
+                        "config",
+                        "sgacl",
+                        "341d0400-ab0f-11ee-ad08-7e2a0d928e99"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Request 12",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Accept",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Authorization",
+                        "value": "Basic YXBpdXNlcjpLNGY4"
+                    }
+                ],
+                "url": {
+                    "raw": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/ff802930-b332-11ee-ad08-7e2a0d928e99",
+                    "protocol": "https",
+                    "host": [
+                        "wdf90-ise-01",
+                        "net",
+                        "sap",
+                        "corp"
+                    ],
+                    "path": [
+                        "ers",
+                        "config",
+                        "sgacl",
+                        "ff802930-b332-11ee-ad08-7e2a0d928e99"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Request 13",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Accept",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Authorization",
+                        "value": "Basic YXBpdXNlcjpLNGY4"
+                    }
+                ],
+                "url": {
+                    "raw": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/9fdbaa80-9f1f-11ee-ad08-7e2a0d928e99",
+                    "protocol": "https",
+                    "host": [
+                        "wdf90-ise-01",
+                        "net",
+                        "sap",
+                        "corp"
+                    ],
+                    "path": [
+                        "ers",
+                        "config",
+                        "sgacl",
+                        "9fdbaa80-9f1f-11ee-ad08-7e2a0d928e99"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Request 14",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Accept",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Authorization",
+                        "value": "Basic YXBpdXNlcjpLNGY4"
+                    }
+                ],
+                "url": {
+                    "raw": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/7fa63600-b332-11ee-ad08-7e2a0d928e99",
+                    "protocol": "https",
+                    "host": [
+                        "wdf90-ise-01",
+                        "net",
+                        "sap",
+                        "corp"
+                    ],
+                    "path": [
+                        "ers",
+                        "config",
+                        "sgacl",
+                        "7fa63600-b332-11ee-ad08-7e2a0d928e99"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Request 15",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Accept",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Authorization",
+                        "value": "Basic YXBpdXNlcjpLNGY4"
+                    }
+                ],
+                "url": {
+                    "raw": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/994230e0-b333-11ee-ad08-7e2a0d928e99",
+                    "protocol": "https",
+                    "host": [
+                        "wdf90-ise-01",
+                        "net",
+                        "sap",
+                        "corp"
+                    ],
+                    "path": [
+                        "ers",
+                        "config",
+                        "sgacl",
+                        "994230e0-b333-11ee-ad08-7e2a0d928e99"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Request 16",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Accept",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Authorization",
+                        "value": "Basic YXBpdXNlcjpLNGY4"
+                    }
+                ],
+                "url": {
+                    "raw": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/bf0899e0-b333-11ee-ad08-7e2a0d928e99",
+                    "protocol": "https",
+                    "host": [
+                        "wdf90-ise-01",
+                        "net",
+                        "sap",
+                        "corp"
+                    ],
+                    "path": [
+                        "ers",
+                        "config",
+                        "sgacl",
+                        "bf0899e0-b333-11ee-ad08-7e2a0d928e99"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Request 17",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Accept",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Authorization",
+                        "value": "Basic YXBpdXNlcjpLNGY4"
+                    }
+                ],
+                "url": {
+                    "raw": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/3da78d50-b33a-11ee-ad08-7e2a0d928e99",
+                    "protocol": "https",
+                    "host": [
+                        "wdf90-ise-01",
+                        "net",
+                        "sap",
+                        "corp"
+                    ],
+                    "path": [
+                        "ers",
+                        "config",
+                        "sgacl",
+                        "3da78d50-b33a-11ee-ad08-7e2a0d928e99"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Request 18",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Accept",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Authorization",
+                        "value": "Basic YXBpdXNlcjpLNGY4"
+                    }
+                ],
+                "url": {
+                    "raw": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/874c7da0-ab04-11ee-ad08-7e2a0d928e99",
+                    "protocol": "https",
+                    "host": [
+                        "wdf90-ise-01",
+                        "net",
+                        "sap",
+                        "corp"
+                    ],
+                    "path": [
+                        "ers",
+                        "config",
+                        "sgacl",
+                        "874c7da0-ab04-11ee-ad08-7e2a0d928e99"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Request 19",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Accept",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Authorization",
+                        "value": "Basic YXBpdXNlcjpLNGY4"
+                    }
+                ],
+                "url": {
+                    "raw": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/c45d4e50-b332-11ee-ad08-7e2a0d928e99",
+                    "protocol": "https",
+                    "host": [
+                        "wdf90-ise-01",
+                        "net",
+                        "sap",
+                        "corp"
+                    ],
+                    "path": [
+                        "ers",
+                        "config",
+                        "sgacl",
+                        "c45d4e50-b332-11ee-ad08-7e2a0d928e99"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Request 20",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Accept",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Authorization",
+                        "value": "Basic YXBpdXNlcjpLNGY4"
+                    }
+                ],
+                "url": {
+                    "raw": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/e00e8a10-b332-11ee-ad08-7e2a0d928e99",
+                    "protocol": "https",
+                    "host": [
+                        "wdf90-ise-01",
+                        "net",
+                        "sap",
+                        "corp"
+                    ],
+                    "path": [
+                        "ers",
+                        "config",
+                        "sgacl",
+                        "e00e8a10-b332-11ee-ad08-7e2a0d928e99"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Request 21",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Accept",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Authorization",
+                        "value": "Basic YXBpdXNlcjpLNGY4"
+                    }
+                ],
+                "url": {
+                    "raw": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/7c37b140-b334-11ee-ad08-7e2a0d928e99",
+                    "protocol": "https",
+                    "host": [
+                        "wdf90-ise-01",
+                        "net",
+                        "sap",
+                        "corp"
+                    ],
+                    "path": [
+                        "ers",
+                        "config",
+                        "sgacl",
+                        "7c37b140-b334-11ee-ad08-7e2a0d928e99"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Request 22",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Accept",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Authorization",
+                        "value": "Basic YXBpdXNlcjpLNGY4"
+                    }
+                ],
+                "url": {
+                    "raw": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/a938e940-b332-11ee-ad08-7e2a0d928e99",
+                    "protocol": "https",
+                    "host": [
+                        "wdf90-ise-01",
+                        "net",
+                        "sap",
+                        "corp"
+                    ],
+                    "path": [
+                        "ers",
+                        "config",
+                        "sgacl",
+                        "a938e940-b332-11ee-ad08-7e2a0d928e99"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Request 23",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Accept",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Authorization",
+                        "value": "Basic YXBpdXNlcjpLNGY4"
+                    }
+                ],
+                "url": {
+                    "raw": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/a747f940-b333-11ee-ad08-7e2a0d928e99",
+                    "protocol": "https",
+                    "host": [
+                        "wdf90-ise-01",
+                        "net",
+                        "sap",
+                        "corp"
+                    ],
+                    "path": [
+                        "ers",
+                        "config",
+                        "sgacl",
+                        "a747f940-b333-11ee-ad08-7e2a0d928e99"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Request 24",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Accept",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Authorization",
+                        "value": "Basic YXBpdXNlcjpLNGY4"
+                    }
+                ],
+                "url": {
+                    "raw": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/2cbecd70-b333-11ee-ad08-7e2a0d928e99",
+                    "protocol": "https",
+                    "host": [
+                        "wdf90-ise-01",
+                        "net",
+                        "sap",
+                        "corp"
+                    ],
+                    "path": [
+                        "ers",
+                        "config",
+                        "sgacl",
+                        "2cbecd70-b333-11ee-ad08-7e2a0d928e99"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Request 25",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Accept",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Authorization",
+                        "value": "Basic YXBpdXNlcjpLNGY4"
+                    }
+                ],
+                "url": {
+                    "raw": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/b0dbe890-b333-11ee-ad08-7e2a0d928e99",
+                    "protocol": "https",
+                    "host": [
+                        "wdf90-ise-01",
+                        "net",
+                        "sap",
+                        "corp"
+                    ],
+                    "path": [
+                        "ers",
+                        "config",
+                        "sgacl",
+                        "b0dbe890-b333-11ee-ad08-7e2a0d928e99"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Request 26",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Accept",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Authorization",
+                        "value": "Basic YXBpdXNlcjpLNGY4"
+                    }
+                ],
+                "url": {
+                    "raw": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/b43fdff0-b6a8-11ee-ad08-7e2a0d928e99",
+                    "protocol": "https",
+                    "host": [
+                        "wdf90-ise-01",
+                        "net",
+                        "sap",
+                        "corp"
+                    ],
+                    "path": [
+                        "ers",
+                        "config",
+                        "sgacl",
+                        "b43fdff0-b6a8-11ee-ad08-7e2a0d928e99"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Request 27",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Accept",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Authorization",
+                        "value": "Basic YXBpdXNlcjpLNGY4"
+                    }
+                ],
+                "url": {
+                    "raw": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/29111240-b334-11ee-ad08-7e2a0d928e99",
+                    "protocol": "https",
+                    "host": [
+                        "wdf90-ise-01",
+                        "net",
+                        "sap",
+                        "corp"
+                    ],
+                    "path": [
+                        "ers",
+                        "config",
+                        "sgacl",
+                        "29111240-b334-11ee-ad08-7e2a0d928e99"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Request 28",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Accept",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Authorization",
+                        "value": "Basic YXBpdXNlcjpLNGY4"
+                    }
+                ],
+                "url": {
+                    "raw": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/db7aca20-b5f0-11ee-ad08-7e2a0d928e99",
+                    "protocol": "https",
+                    "host": [
+                        "wdf90-ise-01",
+                        "net",
+                        "sap",
+                        "corp"
+                    ],
+                    "path": [
+                        "ers",
+                        "config",
+                        "sgacl",
+                        "db7aca20-b5f0-11ee-ad08-7e2a0d928e99"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Request 29",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Accept",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Authorization",
+                        "value": "Basic YXBpdXNlcjpLNGY4"
+                    }
+                ],
+                "url": {
+                    "raw": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/a42a4420-955b-11ee-8b0b-2616239c0237",
+                    "protocol": "https",
+                    "host": [
+                        "wdf90-ise-01",
+                        "net",
+                        "sap",
+                        "corp"
+                    ],
+                    "path": [
+                        "ers",
+                        "config",
+                        "sgacl",
+                        "a42a4420-955b-11ee-8b0b-2616239c0237"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Request 30",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Accept",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Authorization",
+                        "value": "Basic YXBpdXNlcjpLNGY4"
+                    }
+                ],
+                "url": {
+                    "raw": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/9f0a7ba0-ab03-11ee-ad08-7e2a0d928e99",
+                    "protocol": "https",
+                    "host": [
+                        "wdf90-ise-01",
+                        "net",
+                        "sap",
+                        "corp"
+                    ],
+                    "path": [
+                        "ers",
+                        "config",
+                        "sgacl",
+                        "9f0a7ba0-ab03-11ee-ad08-7e2a0d928e99"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Request 31",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Accept",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Authorization",
+                        "value": "Basic YXBpdXNlcjpLNGY4"
+                    }
+                ],
+                "url": {
+                    "raw": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/265a8730-ab04-11ee-ad08-7e2a0d928e99",
+                    "protocol": "https",
+                    "host": [
+                        "wdf90-ise-01",
+                        "net",
+                        "sap",
+                        "corp"
+                    ],
+                    "path": [
+                        "ers",
+                        "config",
+                        "sgacl",
+                        "265a8730-ab04-11ee-ad08-7e2a0d928e99"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Request 32",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Accept",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Authorization",
+                        "value": "Basic YXBpdXNlcjpLNGY4"
+                    }
+                ],
+                "url": {
+                    "raw": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/6ac4fcb0-b334-11ee-ad08-7e2a0d928e99",
+                    "protocol": "https",
+                    "host": [
+                        "wdf90-ise-01",
+                        "net",
+                        "sap",
+                        "corp"
+                    ],
+                    "path": [
+                        "ers",
+                        "config",
+                        "sgacl",
+                        "6ac4fcb0-b334-11ee-ad08-7e2a0d928e99"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Request 33",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Accept",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Authorization",
+                        "value": "Basic YXBpdXNlcjpLNGY4"
+                    }
+                ],
+                "url": {
+                    "raw": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/fd0ff4f0-ab0d-11ee-ad08-7e2a0d928e99",
+                    "protocol": "https",
+                    "host": [
+                        "wdf90-ise-01",
+                        "net",
+                        "sap",
+                        "corp"
+                    ],
+                    "path": [
+                        "ers",
+                        "config",
+                        "sgacl",
+                        "fd0ff4f0-ab0d-11ee-ad08-7e2a0d928e99"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Request 34",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Accept",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Authorization",
+                        "value": "Basic YXBpdXNlcjpLNGY4"
+                    }
+                ],
+                "url": {
+                    "raw": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/266d1940-ab0e-11ee-ad08-7e2a0d928e99",
+                    "protocol": "https",
+                    "host": [
+                        "wdf90-ise-01",
+                        "net",
+                        "sap",
+                        "corp"
+                    ],
+                    "path": [
+                        "ers",
+                        "config",
+                        "sgacl",
+                        "266d1940-ab0e-11ee-ad08-7e2a0d928e99"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Request 35",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Accept",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Authorization",
+                        "value": "Basic YXBpdXNlcjpLNGY4"
+                    }
+                ],
+                "url": {
+                    "raw": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/911fd0d0-ab0d-11ee-ad08-7e2a0d928e99",
+                    "protocol": "https",
+                    "host": [
+                        "wdf90-ise-01",
+                        "net",
+                        "sap",
+                        "corp"
+                    ],
+                    "path": [
+                        "ers",
+                        "config",
+                        "sgacl",
+                        "911fd0d0-ab0d-11ee-ad08-7e2a0d928e99"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Request 36",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Accept",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Authorization",
+                        "value": "Basic YXBpdXNlcjpLNGY4"
+                    }
+                ],
+                "url": {
+                    "raw": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/6ac72420-3212-11ee-a1d3-4ac52a6dce17",
+                    "protocol": "https",
+                    "host": [
+                        "wdf90-ise-01",
+                        "net",
+                        "sap",
+                        "corp"
+                    ],
+                    "path": [
+                        "ers",
+                        "config",
+                        "sgacl",
+                        "6ac72420-3212-11ee-a1d3-4ac52a6dce17"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Request 37",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Accept",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Authorization",
+                        "value": "Basic YXBpdXNlcjpLNGY4"
+                    }
+                ],
+                "url": {
+                    "raw": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/26084780-ab0f-11ee-ad08-7e2a0d928e99",
+                    "protocol": "https",
+                    "host": [
+                        "wdf90-ise-01",
+                        "net",
+                        "sap",
+                        "corp"
+                    ],
+                    "path": [
+                        "ers",
+                        "config",
+                        "sgacl",
+                        "26084780-ab0f-11ee-ad08-7e2a0d928e99"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Request 38",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Accept",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Authorization",
+                        "value": "Basic YXBpdXNlcjpLNGY4"
+                    }
+                ],
+                "url": {
+                    "raw": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/0867b670-b334-11ee-ad08-7e2a0d928e99",
+                    "protocol": "https",
+                    "host": [
+                        "wdf90-ise-01",
+                        "net",
+                        "sap",
+                        "corp"
+                    ],
+                    "path": [
+                        "ers",
+                        "config",
+                        "sgacl",
+                        "0867b670-b334-11ee-ad08-7e2a0d928e99"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Request 39",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Accept",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Authorization",
+                        "value": "Basic YXBpdXNlcjpLNGY4"
+                    }
+                ],
+                "url": {
+                    "raw": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/66584ed0-9f1f-11ee-ad08-7e2a0d928e99",
+                    "protocol": "https",
+                    "host": [
+                        "wdf90-ise-01",
+                        "net",
+                        "sap",
+                        "corp"
+                    ],
+                    "path": [
+                        "ers",
+                        "config",
+                        "sgacl",
+                        "66584ed0-9f1f-11ee-ad08-7e2a0d928e99"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Request 40",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Accept",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Authorization",
+                        "value": "Basic YXBpdXNlcjpLNGY4"
+                    }
+                ],
+                "url": {
+                    "raw": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/542a1760-b334-11ee-ad08-7e2a0d928e99",
+                    "protocol": "https",
+                    "host": [
+                        "wdf90-ise-01",
+                        "net",
+                        "sap",
+                        "corp"
+                    ],
+                    "path": [
+                        "ers",
+                        "config",
+                        "sgacl",
+                        "542a1760-b334-11ee-ad08-7e2a0d928e99"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Request 41",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Accept",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Authorization",
+                        "value": "Basic YXBpdXNlcjpLNGY4"
+                    }
+                ],
+                "url": {
+                    "raw": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/8f7493f0-b333-11ee-ad08-7e2a0d928e99",
+                    "protocol": "https",
+                    "host": [
+                        "wdf90-ise-01",
+                        "net",
+                        "sap",
+                        "corp"
+                    ],
+                    "path": [
+                        "ers",
+                        "config",
+                        "sgacl",
+                        "8f7493f0-b333-11ee-ad08-7e2a0d928e99"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Request 42",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Accept",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Authorization",
+                        "value": "Basic YXBpdXNlcjpLNGY4"
+                    }
+                ],
+                "url": {
+                    "raw": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/61630f50-b333-11ee-ad08-7e2a0d928e99",
+                    "protocol": "https",
+                    "host": [
+                        "wdf90-ise-01",
+                        "net",
+                        "sap",
+                        "corp"
+                    ],
+                    "path": [
+                        "ers",
+                        "config",
+                        "sgacl",
+                        "61630f50-b333-11ee-ad08-7e2a0d928e99"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Request 43",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Accept",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Authorization",
+                        "value": "Basic YXBpdXNlcjpLNGY4"
+                    }
+                ],
+                "url": {
+                    "raw": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/33b50340-b33a-11ee-ad08-7e2a0d928e99",
+                    "protocol": "https",
+                    "host": [
+                        "wdf90-ise-01",
+                        "net",
+                        "sap",
+                        "corp"
+                    ],
+                    "path": [
+                        "ers",
+                        "config",
+                        "sgacl",
+                        "33b50340-b33a-11ee-ad08-7e2a0d928e99"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Request 44",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Accept",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Authorization",
+                        "value": "Basic YXBpdXNlcjpLNGY4"
+                    }
+                ],
+                "url": {
+                    "raw": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/57cd8650-ab04-11ee-ad08-7e2a0d928e99",
+                    "protocol": "https",
+                    "host": [
+                        "wdf90-ise-01",
+                        "net",
+                        "sap",
+                        "corp"
+                    ],
+                    "path": [
+                        "ers",
+                        "config",
+                        "sgacl",
+                        "57cd8650-ab04-11ee-ad08-7e2a0d928e99"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Request 45",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Accept",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Authorization",
+                        "value": "Basic YXBpdXNlcjpLNGY4"
+                    }
+                ],
+                "url": {
+                    "raw": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/852b9000-b334-11ee-ad08-7e2a0d928e99",
+                    "protocol": "https",
+                    "host": [
+                        "wdf90-ise-01",
+                        "net",
+                        "sap",
+                        "corp"
+                    ],
+                    "path": [
+                        "ers",
+                        "config",
+                        "sgacl",
+                        "852b9000-b334-11ee-ad08-7e2a0d928e99"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Request 46",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Accept",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Authorization",
+                        "value": "Basic YXBpdXNlcjpLNGY4"
+                    }
+                ],
+                "url": {
+                    "raw": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/91a7d230-b334-11ee-ad08-7e2a0d928e99",
+                    "protocol": "https",
+                    "host": [
+                        "wdf90-ise-01",
+                        "net",
+                        "sap",
+                        "corp"
+                    ],
+                    "path": [
+                        "ers",
+                        "config",
+                        "sgacl",
+                        "91a7d230-b334-11ee-ad08-7e2a0d928e99"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Request 47",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Accept",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Authorization",
+                        "value": "Basic YXBpdXNlcjpLNGY4"
+                    }
+                ],
+                "url": {
+                    "raw": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/b5a61040-b332-11ee-ad08-7e2a0d928e99",
+                    "protocol": "https",
+                    "host": [
+                        "wdf90-ise-01",
+                        "net",
+                        "sap",
+                        "corp"
+                    ],
+                    "path": [
+                        "ers",
+                        "config",
+                        "sgacl",
+                        "b5a61040-b332-11ee-ad08-7e2a0d928e99"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Request 48",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Accept",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Authorization",
+                        "value": "Basic YXBpdXNlcjpLNGY4"
+                    }
+                ],
+                "url": {
+                    "raw": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/7355acd0-b334-11ee-ad08-7e2a0d928e99",
+                    "protocol": "https",
+                    "host": [
+                        "wdf90-ise-01",
+                        "net",
+                        "sap",
+                        "corp"
+                    ],
+                    "path": [
+                        "ers",
+                        "config",
+                        "sgacl",
+                        "7355acd0-b334-11ee-ad08-7e2a0d928e99"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Request 49",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Accept",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Authorization",
+                        "value": "Basic YXBpdXNlcjpLNGY4"
+                    }
+                ],
+                "url": {
+                    "raw": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/8222d950-b333-11ee-ad08-7e2a0d928e99",
+                    "protocol": "https",
+                    "host": [
+                        "wdf90-ise-01",
+                        "net",
+                        "sap",
+                        "corp"
+                    ],
+                    "path": [
+                        "ers",
+                        "config",
+                        "sgacl",
+                        "8222d950-b333-11ee-ad08-7e2a0d928e99"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Request 50",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Accept",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Authorization",
+                        "value": "Basic YXBpdXNlcjpLNGY4"
+                    }
+                ],
+                "url": {
+                    "raw": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/ef0c9fb0-b333-11ee-ad08-7e2a0d928e99",
+                    "protocol": "https",
+                    "host": [
+                        "wdf90-ise-01",
+                        "net",
+                        "sap",
+                        "corp"
+                    ],
+                    "path": [
+                        "ers",
+                        "config",
+                        "sgacl",
+                        "ef0c9fb0-b333-11ee-ad08-7e2a0d928e99"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Request 51",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Accept",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Authorization",
+                        "value": "Basic YXBpdXNlcjpLNGY4"
+                    }
+                ],
+                "url": {
+                    "raw": "https://wdf90-ise-01.net.sap.corp/ers/config/sgacl/6e009520-b333-11ee-ad08-7e2a0d928e99",
+                    "protocol": "https",
+                    "host": [
+                        "wdf90-ise-01",
+                        "net",
+                        "sap",
+                        "corp"
+                    ],
+                    "path": [
+                        "ers",
+                        "config",
+                        "sgacl",
+                        "6e009520-b333-11ee-ad08-7e2a0d928e99"
+                    ]
+                }
+            },
+            "response": []
+        }
+    ]
+}

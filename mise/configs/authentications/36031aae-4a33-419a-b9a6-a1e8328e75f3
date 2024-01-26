@@ -1,0 +1,19 @@
+{
+    "rule": {
+        "default": true,
+        "name": "Default",
+        "hitCounts": 0,
+        "rank": 1,
+        "state": "enabled",
+        "condition": null
+    },
+    "identitySourceName": "DenyAccess",
+    "ifAuthFail": "REJECT",
+    "ifUserNotFound": "REJECT",
+    "ifProcessFail": "DROP",
+    "link": {
+        "rel": "self",
+        "href": "https://10.48.30.214/api/v1/policy/network-access/policy-set/afc4e74c-51d7-4e3f-b769-29b4eda5b207/authentication/36031aae-4a33-419a-b9a6-a1e8328e75f3",
+        "type": "application/json"
+    }
+}

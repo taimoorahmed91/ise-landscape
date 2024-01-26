@@ -1,0 +1,19 @@
+{
+    "rule": {
+        "default": true,
+        "name": "Default",
+        "hitCounts": 6,
+        "rank": 2,
+        "state": "enabled",
+        "condition": null
+    },
+    "profile": [
+        "PermitAccess"
+    ],
+    "securityGroup": null,
+    "link": {
+        "rel": "self",
+        "href": "https://10.48.30.214/api/v1/policy/network-access/policy-set/afc4e74c-51d7-4e3f-b769-29b4eda5b207/authorization/3839f9eb-dd36-47e7-a89c-ffab76d9cdaf",
+        "type": "application/json"
+    }
+}

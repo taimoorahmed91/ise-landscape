@@ -83,11 +83,12 @@ script_element = "put_" + type_field + ".py"
 #print(script_element)
 
 
+script_element1 = os.path.join("/root/ise-landscape/mise/", script_element)
 
 
 
 # Construct the command with sudo, Python 3, script name, and the argument
-command = ["sudo", "-S", "python3", script_element, src_id, dstise, element]
+command = ["sudo", "-S", "python3", script_element1, src_id, dstise, element]
 
 # Execute the command using subprocess and capture the output
 result = subprocess.run(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
@@ -97,7 +98,7 @@ output = result.stdout
 error = result.stderr
 
 # Print the output and error
-print("Output:", output)
+#print("Output:", output)
 #print("Error:", error if error else "No error")
 
 

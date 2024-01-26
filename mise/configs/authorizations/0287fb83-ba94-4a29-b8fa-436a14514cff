@@ -1,0 +1,41 @@
+{
+    "rule": {
+        "default": false,
+        "name": "NonCompliant_Devices_Redirect",
+        "hitCounts": 0,
+        "rank": 4,
+        "state": "disabled",
+        "condition": {
+            "link": null,
+            "conditionType": "ConditionAndBlock",
+            "isNegate": false,
+            "children": [
+                {
+                    "link": null,
+                    "conditionType": "ConditionReference",
+                    "isNegate": false,
+                    "name": "Network_Access_Authentication_Passed",
+                    "id": "e8edc1bc-dca5-4e00-a233-e1edc7ab98ca",
+                    "description": "Default condition used for basic Network Access requiring that authentication was successful."
+                },
+                {
+                    "link": null,
+                    "conditionType": "ConditionReference",
+                    "isNegate": false,
+                    "name": "Non_Compliant_Devices",
+                    "id": "0bdd5239-dd89-4378-99fb-843f876cf57b",
+                    "description": "Default condition for non-compliant devices"
+                }
+            ]
+        }
+    },
+    "profile": [
+        "Cisco_Temporal_Onboard"
+    ],
+    "securityGroup": null,
+    "link": {
+        "rel": "self",
+        "href": "https://10.48.30.214/api/v1/policy/network-access/policy-set/3f7f0327-3222-4e48-86a0-380ecd80a7da/authorization/0287fb83-ba94-4a29-b8fa-436a14514cff",
+        "type": "application/json"
+    }
+}

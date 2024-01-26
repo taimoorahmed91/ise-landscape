@@ -1,0 +1,28 @@
+{
+    "rule": {
+        "default": false,
+        "name": "Authorization Rule 2",
+        "hitCounts": 0,
+        "rank": 1,
+        "state": "enabled",
+        "condition": {
+            "link": null,
+            "conditionType": "ConditionAttributes",
+            "isNegate": false,
+            "dictionaryName": "CERTIFICATE",
+            "attributeName": "Days to Expiry",
+            "operator": "greaterThan",
+            "dictionaryValue": null,
+            "attributeValue": "2"
+        }
+    },
+    "profile": [
+        "PermitAccess"
+    ],
+    "securityGroup": null,
+    "link": {
+        "rel": "self",
+        "href": "https://10.48.30.214/api/v1/policy/network-access/policy-set/afc4e74c-51d7-4e3f-b769-29b4eda5b207/authorization/b4c3a59d-d016-44d4-a845-423cf5bf3de2",
+        "type": "application/json"
+    }
+}

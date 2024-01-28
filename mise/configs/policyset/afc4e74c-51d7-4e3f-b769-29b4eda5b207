@@ -2,7 +2,7 @@
     "default": false,
     "name": "New Policy Set 1",
     "description": null,
-    "hitCounts": 1926,
+    "hitCounts": 2678,
     "rank": 0,
     "state": "enabled",
     "condition": {

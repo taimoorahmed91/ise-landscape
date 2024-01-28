@@ -1,0 +1,28 @@
+{
+    "rule": {
+        "default": false,
+        "name": "Authentication Rule 1",
+        "hitCounts": 0,
+        "rank": 0,
+        "state": "enabled",
+        "condition": {
+            "link": null,
+            "conditionType": "ConditionAttributes",
+            "isNegate": false,
+            "dictionaryName": "DEVICE",
+            "attributeName": "Device Type",
+            "operator": "equals",
+            "dictionaryValue": null,
+            "attributeValue": "All Device Types"
+        }
+    },
+    "identitySourceName": "MAB_ID_SEQ",
+    "ifAuthFail": "REJECT",
+    "ifUserNotFound": "REJECT",
+    "ifProcessFail": "DROP",
+    "link": {
+        "rel": "self",
+        "href": "https://10.48.30.75/api/v1/policy/network-access/policy-set/04e54f65-e4c3-4dfd-a3b8-f02c876f93a7/authentication/0a85b740-d4eb-4183-a1d7-fa67cdae5707",
+        "type": "application/json"
+    }
+}

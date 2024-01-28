@@ -3,7 +3,7 @@
         "default": true,
         "name": "Default",
         "hitCounts": 0,
-        "rank": 2,
+        "rank": 1,
         "state": "enabled",
         "condition": null
     },
@@ -13,7 +13,7 @@
     "ifProcessFail": "DROP",
     "link": {
         "rel": "self",
-        "href": "https://10.48.30.79/api/v1/policy/network-access/policy-set/b3976fa4-e294-4461-8d09-c7aebf86d47e/authentication/946f2e8c-760b-4612-9948-f60da54782b0",
+        "href": "https://10.48.30.75/api/v1/policy/network-access/policy-set/04e54f65-e4c3-4dfd-a3b8-f02c876f93a7/authentication/65e04c09-efd5-4462-9c48-b37e254af405",
         "type": "application/json"
     }
 }

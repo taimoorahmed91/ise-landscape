@@ -54,11 +54,18 @@ url = firsthalfurl + fqdn + secondhalfurl
 print(url)
 
 payload={}
-headers = {
-          'Content-Type': 'application/json',
-  'Accept': 'application/json',
-  'Authorization': 'Basic YWRtaW46QzFzYzAxMjNA',
-}
+#headers = {
+#          'Content-Type': 'application/json',
+#  'Accept': 'application/json',
+#  'Authorization': 'Basic YWRtaW46QzFzYzAxMjNA',
+#}
+with open('credentials.txt') as file:
+    # Execute the code in a separate namespace
+    namespace = {}
+    exec(file.read(), namespace)
+    
+    # Extract the 'headers' variable
+    headers = namespace.get('headers', {})
 response = requests.get(url, headers=headers, data=payload, verify=False)
 
 json_response = response.json()

@@ -1,0 +1,63 @@
+{
+    "rule": {
+        "default": false,
+        "name": "Basic_Authenticated_Access_copy",
+        "hitCounts": 0,
+        "rank": 11,
+        "state": "enabled",
+        "condition": {
+            "link": null,
+            "conditionType": "ConditionAndBlock",
+            "isNegate": false,
+            "children": [
+                {
+                    "link": null,
+                    "conditionType": "ConditionReference",
+                    "isNegate": false,
+                    "name": "Network_Access_Authentication_Passed",
+                    "id": "5cabd4cc-0bf5-488b-aedf-dc7a6840907e",
+                    "description": "Default condition used for basic Network Access requiring that authentication was successful."
+                },
+                {
+                    "link": null,
+                    "conditionType": "ConditionAttributes",
+                    "isNegate": false,
+                    "dictionaryName": "AD",
+                    "attributeName": "ExternalGroups",
+                    "operator": "equals",
+                    "dictionaryValue": null,
+                    "attributeValue": "taimoorlab.local/Group Policy/Networks/DC1"
+                },
+                {
+                    "link": null,
+                    "conditionType": "ConditionAttributes",
+                    "isNegate": false,
+                    "dictionaryName": "CERTIFICATE",
+                    "attributeName": "Days to Expiry",
+                    "operator": "greaterThan",
+                    "dictionaryValue": null,
+                    "attributeValue": "30"
+                },
+                {
+                    "link": null,
+                    "conditionType": "ConditionAttributes",
+                    "isNegate": false,
+                    "dictionaryName": "CERTIFICATE",
+                    "attributeName": "Template Name",
+                    "operator": "contains",
+                    "dictionaryValue": null,
+                    "attributeValue": "user"
+                }
+            ]
+        }
+    },
+    "profile": [
+        "PermitAccess"
+    ],
+    "securityGroup": null,
+    "link": {
+        "rel": "self",
+        "href": "https://10.48.30.75/api/v1/policy/network-access/policy-set/1e08c19a-81c3-4040-a989-709edb99bcd6/authorization/7b3f542c-e623-4098-b32a-b3d408252c7e",
+        "type": "application/json"
+    }
+}

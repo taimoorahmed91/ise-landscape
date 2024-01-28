@@ -1,0 +1,23 @@
+{
+    "default": false,
+    "name": "LDAP_TEST",
+    "description": null,
+    "hitCounts": 0,
+    "rank": 0,
+    "state": "enabled",
+    "condition": {
+        "link": null,
+        "conditionType": "ConditionReference",
+        "isNegate": false,
+        "name": "Wired_MAB",
+        "id": "788f24e8-af00-4c6c-80ed-ad9dd3ce17cd",
+        "description": "A condition to match MAC Authentication Bypass service based authentication requests from switches, according to the corresponding MAB attributes defined in the device profile."
+    },
+    "serviceName": "Default Network Access",
+    "isProxy": false,
+    "link": {
+        "rel": "self",
+        "href": "https://10.48.30.75/api/v1/policy/network-access/policy-set/04e54f65-e4c3-4dfd-a3b8-f02c876f93a7",
+        "type": "application/json"
+    }
+}

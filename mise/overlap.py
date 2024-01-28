@@ -98,7 +98,7 @@ output = result.stdout
 error = result.stderr
 
 # Print the output and error
-#print("Output:", output)
+print("Output:", output)
 #print("Error:", error if error else "No error")
 
 

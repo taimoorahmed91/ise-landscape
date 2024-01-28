@@ -3,7 +3,7 @@
     "name": "New Policy Set 1",
     "description": null,
     "hitCounts": 0,
-    "rank": 0,
+    "rank": 1,
     "state": "enabled",
     "condition": {
         "link": null,
